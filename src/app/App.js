@@ -1,14 +1,15 @@
-import React from 'react';
-import mainImg from './main.jpg';
-import './App.css';
+import React from "react";
+import { Route } from "react-router-dom";
+import "./App.css";
+import { Gnb, Main, Sub } from "../pages/Index";
+// import mainImg from "./main.jpg";
 
 function App() {
   return (
     <div>
-      <header>
-        <img src={mainImg} alt='' />
-        메뚜기월드에 오신걸 환영합니다~!
-      </header>
+      <Gnb />
+      <Route exact path="/" component={Main} />
+      <Route exact path="/sub" component={Sub} />
     </div>
   );
 }
