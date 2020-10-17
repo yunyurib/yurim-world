@@ -1,0 +1,17 @@
+/* Fonts */
+@charset "utf-8";
+
+@font-face {
+  font-family: "Rockness";
+  src: url("http://yurimxu.dothome.co.kr/fonts/Rockness.ttf"),
+    url("http://yurimxu.dothome.co.kr/fonts/Rockness.eot"),
+    url("http://yurimxu.dothome.co.kr/fonts/Rockness.woff");
+}
+
+@font-face {
+  font-family: "vivaldii";
+  src: url("http://yurimxu.dothome.co.kr/fonts/vivaldii.ttf"),
+    url("http://yurimxu.dothome.co.kr/fonts/vivaldii.eot"),
+    url("http://yurimxu.dothome.co.kr/fonts/vivaldii.woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap");

@@ -1,6 +1,8 @@
 import React from "react";
 
-import { Small } from "./Small";
+import { Normal } from "./Normal";
+import { Art } from "./Art";
+import { Design } from "./Design";
 
 export default {
   title: "components/Typography",
@@ -8,11 +10,12 @@ export default {
   argTypes: {},
 };
 
-export const DefaultSmall = (args) => {
-  return <Small {...args} />;
+export const NormalText = (args) => {
+  return <Normal {...args} />;
 };
-DefaultSmall.argTypes = {
-  innerText: { control: { type: "text" } },
-  isDisabled: { control: { type: "boolean" } },
-  size: { control: { type: "select", options: ["small", "medium", "large"] } },
+export const ArtText = (args) => {
+  return <Art {...args} />;
+};
+export const DefaultDesign = (args) => {
+  return <Design {...args} />;
 };
