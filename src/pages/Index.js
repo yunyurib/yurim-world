@@ -1,4 +1,6 @@
-export { default as Main } from "./Main";
-export { default as Sub } from "./Sub";
-
-export * from "./Gnb";
+export * from "./gnb/Gnb";
+export * from "./home/Home";
+export * from "./about/About";
+export * from "./develop/Develop";
+export * from "./design/Design";
+export * from "./contact/Contact";
