@@ -18,7 +18,7 @@ export const Gnb = () => {
     <GnbWrapper>
       <GnbBox>
         <GnbLogo>
-          <Link to="/home" className="logo">
+          <Link to="/" className="logo">
             YR
             <Lined className="lined lined_dot_1"></Lined>
             <Lined className="lined lined_dot_2"></Lined>
