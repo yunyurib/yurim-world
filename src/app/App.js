@@ -8,7 +8,7 @@ import { Home, Gnb, About, Develop, Design, Contact } from "../pages/Index";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Gnb /> */}
+      <Gnb />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/develop" component={Develop} />

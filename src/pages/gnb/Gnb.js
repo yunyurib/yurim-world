@@ -1,232 +1,200 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import mainImg from "../../assets/image/main_logo.svg";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import mainImg from "../../assets/image/main_logo.svg";
 
-// FontAwesomeIcon
-import {
-  faBars,
-  faSmile,
-  faDesktop,
-  faPalette,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+// // FontAwesomeIcon
+// import {
+//   faBars,
+//   faSmile,
+//   faDesktop,
+//   faPalette,
+//   faEnvelope,
+// } from "@fortawesome/free-solid-svg-icons";
 
 export const Gnb = () => {
   return (
     <GnbWrapper>
-      <GnbLogo>
-        <Link to="/home">
-          <img src={mainImg} alt="메인로고" />
-        </Link>
-      </GnbLogo>
-      <GnbHam>
-        <GnbStyledFontAwesomeIcon icon={faBars} size="2x" />
-      </GnbHam>
-      <GnbInner>
-        <GnbList>
+      <GnbBox>
+        <GnbLogo>
+          <Link to="/home" className="logo">
+            YR
+            <Lined className="lined lined_dot_1"></Lined>
+            <Lined className="lined lined_dot_2"></Lined>
+            <Lined className="lined lined_dot_3"></Lined>
+            <Lined className="lined lined_dot_4"></Lined>
+            <Lined className="lined lined_dot_5"></Lined>
+            <Lined className="lined lined_dot_6"></Lined>
+          </Link>
+        </GnbLogo>
+        <GnbLink>
+          <a href="https://codepen.io/your-work/" target="blank">
+            GitHub
+            <Lined className="lined lined_dot_1"></Lined>
+            <Lined className="lined lined_dot_2"></Lined>
+            <Lined className="lined lined_dot_3"></Lined>
+            <Lined className="lined lined_dot_4"></Lined>
+            <Lined className="lined lined_dot_5"></Lined>
+            <Lined className="lined lined_dot_6"></Lined>
+          </a>
+          <a href="https://github.com/xururuca9797" target="blank">
+            Codepen
+            <Lined className="lined lined_dot_1"></Lined>
+            <Lined className="lined lined_dot_2"></Lined>
+            <Lined className="lined lined_dot_3"></Lined>
+            <Lined className="lined lined_dot_4"></Lined>
+            <Lined className="lined lined_dot_5"></Lined>
+            <Lined className="lined lined_dot_6"></Lined>
+          </a>
+        </GnbLink>
+        <GnbHam type="button">
+          <span></span>
+        </GnbHam>
+      </GnbBox>
+      <GnbMenu>
+        <ul>
           <li>
-            <Link to="/about">
-              <FontAwesomeIcon icon={faSmile} size="m" />
-              about
+            <Link to="/about" className="ab">
+              About
             </Link>
           </li>
           <li>
-            <Link to="/develop">
-              <FontAwesomeIcon icon={faDesktop} size="m" />
-              develop
-            </Link>
-            <GnbSub>
-              <li>
-                <Link to="/develop">work</Link>
-              </li>
-              <li>
-                <Link to="/component">component</Link>
-              </li>
-              <li>
-                <Link to="/study">study</Link>
-              </li>
-            </GnbSub>
+            <Link to="/about">Develop</Link>
           </li>
           <li>
-            <Link to="/design">
-              <FontAwesomeIcon icon={faPalette} size="m" />
-              design
-            </Link>
-            <GnbSub>
-              <li>
-                <Link to="/graphics">web_graphics</Link>
-              </li>
-              <li>
-                <Link to="/artwork">artwork</Link>
-              </li>
-            </GnbSub>
+            <Link to="/about">Design</Link>
           </li>
           <li>
-            <Link to="/contact">
-              <FontAwesomeIcon icon={faEnvelope} size="m" />
-              contact
-            </Link>
+            <Link to="/about">Design</Link>
           </li>
-        </GnbList>
-      </GnbInner>
-      <GnbTab>
-        <GnbTabList>
-          <li>
-            <Link to="/aboutl">
-              <i class="fas fa-smile"></i>
-            </Link>
-          </li>
-          <li>
-            <Link to="/develop">
-              <i class="fas fa-desktop"></i>
-            </Link>
-          </li>
-          <li>
-            <Link to="/design">
-              <i class="fas fa-palette"></i>
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
-              <i class="fas fa-envelope"></i>
-            </Link>
-          </li>
-        </GnbTabList>
-      </GnbTab>
+        </ul>
+      </GnbMenu>
     </GnbWrapper>
   );
 };
-
 const GnbWrapper = styled.header`
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  transition: 0.5;
-  overflow: hidden;
-  z-index: 100;
-`;
-
-const GnbLogo = styled.h1`
-  width: 180px;
-  margin: 20px 10px 30px 10px;
-  > a > img {
-    width: 100%;
-  }
-`;
-
-const GnbInner = styled.div`
-  width: 200px;
-  height: 100%;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  transition: 0.5;
-  overflow: hidden;
-`;
-
-const GnbHam = styled.button`
-  width: 45px;
-  height: 45px;
-  background-color: #fff;
-  border-radius: 20%;
-  border: none;
-  left: 20px;
-  top: 120px;
   position: absolute;
+  width: 100%;
+  text-align: center;
   z-index: 100;
-  cursor: pointer;
-  border: none;
-  outline: none;
+  transition: 1s;
 `;
-const GnbList = styled.ul`
-  width: 200px;
-  font-size: 20px;
-  padding-top: 80px;
-  font-family: "NanumSquare", sans-serif !important;
-  > li {
-    width: 100%;
-    text-transform: capitalize;
+const GnbBox = styled.div`
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  transition: 1s;
+  opacity: 1;
+  justify-content: space-between;
+  padding: 1vw 6.25vw 0vw 6.25vw;
+`;
+const GnbLogo = styled.div`
+  & .logo {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #02f194;
+    border: 1px solid #1e1e1e;
+    padding: 7px 25px;
     position: relative;
-    overflow: hidden;
-    transition: 0.5s;
+    animation: logo01 5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   }
-  > li > a {
-    display: block;
-    margin: 10px 10px;
-    padding: 20px 30px;
-    border-radius: 10px;
-    transition: 0.5s;
-    font-weight: bold;
-    color: rgb(62, 65, 73);
+  & .lined {
+    opacity: 0;
+    animation: logo02 10s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   }
-  > li > a:hover {
-    background-color: var(--blue);
+  @keyframes logo01 {
+    0% {
+      border: 1px solid #1e1e1e;
+    }
+    50% {
+      border: 1px solid #02f194;
+    }
+    100% {
+      border: 1px solid #1e1e1e;
+    }
+  }
+  @keyframes logo02 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+`;
+const GnbLink = styled.div`
+  > a {
+    margin: 0 15px;
+    padding: 0.3em 0.8em 0.2em;
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    color: #ccc;
+    font-size: 16px;
+    border: 1px solid #1e1e1e;
+  }
+  > a:hover {
+    border: 1px solid #02f194;
     color: #fff;
   }
-  > li > a svg {
-    margin-right: 10px;
+  > a:hover .lined {
+    opacity: 1;
   }
 `;
-const GnbSub = styled.ul`
-  & > li {
-    padding-left: 40px;
-    width: 100%;
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: bold;
-  }
-  & > li > a {
-    color: #6b789c;
+const GnbHam = styled.button`
+  width: 70px;
+  outline: none;
+  position: relative;
+  > span::before {
+    content: "";
     display: block;
-    transition: 0.5s;
-  }
-  & > li > a:hover {
-    color: #081435;
-    text-decoration: underline;
-  }
-`;
-const GnbStyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  color: red;
-`;
-
-// Tab메뉴 서식
-const GnbTab = styled.div`
-  width: 95px;
-  height: 100%;
-  position: fixed;
-  box-sizing: border-box;
-  transition: 0.5;
-  padding: 0px 20px;
-  background-color: var(--blue);
-  border-top-right-radius: 40px;
-  left: -300%;
-  top: 130px;
-`;
-const GnbTabList = styled.ul`
-  padding-top: 130px;
-  > li {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 40px;
+    width: 70px;
+    margin: 10px 0px;
+    height: 1px;
     background-color: #fff;
-    border-radius: 20%;
   }
-  > li:hover {
-    background-color: rgb(230, 230, 230);
-  }
-  > li > a {
+  > span {
+    width: 70px;
+    position: absolute;
+    top: 0;
+    height: 1px;
     display: block;
-    transition: 0.5s;
-    font-size: 25px;
-    color: var(--blue);
-    text-align: center;
-    line-height: 43px;
+    background-color: #fff;
   }
-  > li:hover a {
-    color: var(--pink);
+  > span::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+  }
+`;
+const Lined = styled.div`
+  position: absolute;
+  background: #1e1e1e;
+  border: 1px solid #02f194;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+`;
+const GnbMenu = styled.nav`
+  width: 20vw;
+  background-color: #000;
+  float: right;
+  height: 100vw;
+  font-size: 50px;
+  color: #fff;
+  display: none;
+  > ul {
+    padding-top: 100px;
   }
 `;
