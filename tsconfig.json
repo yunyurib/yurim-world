@@ -26,10 +26,10 @@
     "@typescript-eslint/no-unused-vars": "off"
   },
   "include": [
-    "src"
+    "src",
   ],
   "exclude": [
     "dist",
-    "node_modules",
+    "node_modules"
   ]
 }
