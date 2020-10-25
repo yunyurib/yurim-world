@@ -8,14 +8,17 @@ window.addEventListener("mousemove", function (event) {
   document.querySelector(".cursor").style.cssText = "left:" + x + "; top:" + y;
   document.querySelector(".cursor-follower").style.cssText =
     "left:" + x2 + "; top:" + y2;
-
+  document.querySelector(".cursor-follower").animate([{ left: x2, top: y2 }], {
+    duration: 300,
+  });
+  //todo-class아이디로 바꾸기!!
   //마무리
-  document.querySelectorAll("hewder").forEach((elem) => {
+  document.querySelectorAll(".ab").forEach((elem) => {
     elem.addEventListener("mouseenter", () => {
       document.querySelector(".cursor").classList.add("active");
     });
     elem.addEventListener("mouseleave", () => {
-      document.querySelector(".cursor-follower").classList.remove("active");
+      document.querySelector(".cursor").classList.remove("active");
     });
   });
 });
