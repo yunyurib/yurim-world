@@ -3,14 +3,14 @@
 import { create } from "@storybook/theming/create";
 
 export default create({
-  base: "dark",
+  base: "nomal",
 
-  colorPrimary: "hotpink",
+  colorPrimary: "rgb(242, 242, 242)",
   colorSecondary: "deepskyblue",
 
   // UI
   appBg: "white",
-  appContentBg: "silver",
+  appContentBg: "#4271e9",
   appBorderColor: "grey",
   appBorderRadius: 4,
 
@@ -25,7 +25,7 @@ export default create({
   // Toolbar default and active colors
   barTextColor: "silver",
   barSelectedColor: "black",
-  barBg: "hotpink",
+  barBg: "rgb(242, 242, 242)",
 
   // Form colors
   inputBg: "white",
@@ -33,7 +33,7 @@ export default create({
   inputTextColor: "black",
   inputBorderRadius: 4,
 
-  brandTitle: "My custom storybook",
+  brandTitle: "Yurim storybook",
   brandUrl: "https://example.com",
-  brandImage: "https://placehold.it/350x150",
+  brandImage: "http://yurimxu.dothome.co.kr/image/yurim_storybook_logo1.png",
 });

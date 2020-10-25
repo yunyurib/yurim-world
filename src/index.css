@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 body,
 div,
 dl,
@@ -89,6 +91,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 body {
   background: #fff;
+  cursor: none;
 }
 body,
 th,
@@ -119,4 +122,64 @@ em,
 var {
   font-style: normal;
   font-weight: normal;
+}
+.lined_dot_1,
+.lined_dot_2,
+.lined_dot_3 {
+  top: -4px;
+}
+
+.lined_dot_4,
+.lined_dot_5,
+.lined_dot_6 {
+  bottom: -4px;
+}
+.lined_dot_1,
+.lined_dot_4 {
+  left: -4px;
+}
+.lined_dot_2,
+.lined_dot_5 {
+  left: 50%;
+  margin-left: -4px;
+}
+.lined_dot_3,
+.lined_dot_6 {
+  right: -4px;
+  animation: ss 3s ease-in infinite;
+}
+.cursor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1000;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.cursor.active {
+  opacity: 0.5;
+  transform: scale(0);
+}
+
+.cursor-follower {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.cursor-follower.active {
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  transform: scale(4);
 }
