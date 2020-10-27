@@ -91,7 +91,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 body {
   background: #fff;
-  cursor: none;
+  /* cursor: none; */
 }
 body,
 th,
@@ -150,11 +150,11 @@ var {
 }
 .cursor {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #fff;
+  width: 5px;
+  height: 5px;
+  background: #02f194;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 9999;
   user-select: none;
   pointer-events: none;
   transform: scale(1);
@@ -164,6 +164,7 @@ var {
 .cursor.active {
   opacity: 0.5;
   transform: scale(0);
+  z-index: 9999;
 }
 
 .cursor-follower {

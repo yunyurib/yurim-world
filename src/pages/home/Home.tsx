@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "./mouseMove";
+// import "./img";
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
       <div className="cursor"></div>
       <div className="cursor-follower"></div>
       <HomeVisual>
+      <Canvas id="noise" className="noise"/>
         {/* 스크롤 효과 */}
         <CollapseBgWrap>
           <span></span>
@@ -30,16 +32,16 @@ export const Home = () => {
         </HomeGrid>
         <HomeVisualNav>
           <ul>
-            <li>
-              <Link to="/about" className="ab">
+            <li className="mousemovi01">
+              <Link to="/about">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/about">Develop</Link>
+              <Link to="/develop" className="mousemovi02">Develop</Link>
             </li>
             <li>
-              <Link to="/about">Design</Link>
+              <Link to="/design" className="mousemovi03">Design</Link>
             </li>
           </ul>
         </HomeVisualNav>
@@ -114,16 +116,12 @@ const HomeVisualNav = styled.nav`
   transition: 1s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   > ul > li {
-    height: 250px;
     transition: 3s;
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215,0.61,0.355,1);
   }
   > ul > li > a {
-    flex-direction: row;
-    display: flex;
-    flex-flow: column;
     transition: 1s;
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215,0.61,0.355,1);
   }
   > ul > li:hover a {
     color: #fff;
@@ -144,3 +142,14 @@ const HomeVisualNav = styled.nav`
     letter-spacing: 20px;
   }
 `;
+const Canvas = styled.canvas`
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  opacity: 0.1;`;

@@ -7,12 +7,8 @@ export const About = () => {
       <div className="cursor"></div>
       <div className="cursor-follower"></div>
       <AboutVisual>
-        <HomeGrid>
-          <div className="gline01"></div>
-          <div className="gline02"></div>
-          <div className="gline03"></div>
-          <div className="gline04"></div>
-        </HomeGrid>
+        <AboutGrid/>
+        <AboutTitle>About</AboutTitle>
       </AboutVisual>
     </AboutWrapper>
   );
@@ -33,19 +29,21 @@ const AboutVisual = styled.section`
   background-color: #1e1e1e;
 `;
 
-const HomeGrid = styled.div`
+const AboutGrid = styled.div`
   top: 0;
+  margin: 0 auto;
+  width: 1px;
   height: 100%;
-  width: inherit;
-  display: flex;
-  justify-content: space-evenly;
+  background: hsla(0, 0%, 100%, 0.1);
   position: relative;
-  > div {
-    width: 1px;
-    background: hsla(0, 0%, 100%, 0.1);
-    transform-origin: top;
-    /* transform: scale(0); 가운데로사라짐*/
-    transition: transform 2s linear;
-    height: 100%;
-  }
+`;
+const AboutTitle = styled.h2`
+top: 0;
+padding-top: 100px;
+font-size: 9em;
+left: 0;
+position: absolute;
+padding-left: 6.6vw;
+text-transform: uppercase;
+font-family: "Archivo Black",sans-serif;
 `;

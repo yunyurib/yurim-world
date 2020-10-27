@@ -1,17 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import mainImg from "../../assets/image/main_logo.svg";
-
-// // FontAwesomeIcon
-// import {
-//   faBars,
-//   faSmile,
-//   faDesktop,
-//   faPalette,
-//   faEnvelope,
-// } from "@fortawesome/free-solid-svg-icons";
+// import "../../assets/script/Gnb"
 
 export const Gnb = () => {
   return (
@@ -29,7 +19,7 @@ export const Gnb = () => {
           </Link>
         </GnbLogo>
         <GnbLink>
-          <a href="https://codepen.io/your-work/" target="blank">
+          <a href="https://github.com/xururuca9797" target="blank">
             GitHub
             <Lined className="lined lined_dot_1"></Lined>
             <Lined className="lined lined_dot_2"></Lined>
@@ -38,7 +28,7 @@ export const Gnb = () => {
             <Lined className="lined lined_dot_5"></Lined>
             <Lined className="lined lined_dot_6"></Lined>
           </a>
-          <a href="https://github.com/xururuca9797" target="blank">
+          <a href="https://codepen.io/your-work/" target="blank">
             Codepen
             <Lined className="lined lined_dot_1"></Lined>
             <Lined className="lined lined_dot_2"></Lined>
@@ -48,7 +38,7 @@ export const Gnb = () => {
             <Lined className="lined lined_dot_6"></Lined>
           </a>
         </GnbLink>
-        <GnbHam type="button">
+        <GnbHam type="button" id="gnbham">
           <span></span>
         </GnbHam>
       </GnbBox>
