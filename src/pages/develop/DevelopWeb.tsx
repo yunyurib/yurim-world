@@ -121,10 +121,7 @@ export const Develop = () => {
         </DevelopWorkLisr>
       </DevelopWork>
       <DevelopWeb>
-        <h3>Web</h3>
-        <DevelopWebLisr>
-          
-        </DevelopWebLisr>
+
       </DevelopWeb>
     </DevelopWrapper>
   );
@@ -305,5 +302,3 @@ overflow: hidden;
 background-color: #fff;
 padding: 1vw 6.25vw 0vw 6.25vw;
 `;
-
-const DevelopWebLisr = styled.div``;

@@ -111,7 +111,7 @@ const HomeVisualNav = styled.nav`
   position: absolute;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Squada One', cursive;
   text-align: center;
   transition: 1s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);

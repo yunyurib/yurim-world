@@ -1,7 +1,14 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { Home, Gnb, About, Develop, Design, Contact } from "./Index";
+import {
+  Home,
+  Gnb,
+  About,
+  Develop,
+  Design,
+  Contact,
+} from "./Index";
 
 export default {
   title: "pages/all",

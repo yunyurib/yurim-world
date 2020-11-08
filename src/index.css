@@ -1,5 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+@font-face {
+  font-family: "silgothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/silgothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 div,
 dl,
@@ -70,6 +78,7 @@ table {
 }
 body {
   -webkit-text-size-adjust: none;
+  /* cursor: none; */
 } /* 뷰포트 변환시 폰트크기 자동확대 방지. */
 input:checked[type="checkbox"] {
   background-color: #666;
@@ -89,10 +98,6 @@ input[type="reset"] {
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
-body {
-  background: #fff;
-  /* cursor: none; */
-}
 body,
 th,
 td,
@@ -102,7 +107,7 @@ textarea,
 button {
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #333;
 } /* color값은 디자인가이드에 맞게사용 */
 a {
@@ -123,6 +128,8 @@ var {
   font-style: normal;
   font-weight: normal;
 }
+
+/* hover design */
 .lined_dot_1,
 .lined_dot_2,
 .lined_dot_3 {
@@ -135,7 +142,8 @@ var {
   bottom: -4px;
 }
 .lined_dot_1,
-.lined_dot_4 {
+.lined_dot_4,
+.lined_dot_7 {
   left: -4px;
 }
 .lined_dot_2,
@@ -144,10 +152,17 @@ var {
   margin-left: -4px;
 }
 .lined_dot_3,
-.lined_dot_6 {
+.lined_dot_6,
+.lined_dot_8 {
   right: -4px;
   animation: ss 3s ease-in infinite;
 }
+
+.lined_dot_7,
+.lined_dot_8 {
+  top: 50%;
+}
+/* cursor design */
 .cursor {
   position: absolute;
   width: 5px;
@@ -183,4 +198,20 @@ var {
   height: 100px;
   opacity: 0.7;
   transform: scale(4);
+}
+
+/* scrollbar design */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
 }

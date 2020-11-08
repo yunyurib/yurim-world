@@ -42,7 +42,7 @@ export const Gnb = () => {
           <span></span>
         </GnbHam>
       </GnbBox>
-      <GnbMenu>
+      <GnbMenu className="dd">
         <ul>
           <li>
             <Link to="/about" className="ab">
@@ -69,6 +69,7 @@ const GnbWrapper = styled.header`
   text-align: center;
   z-index: 100;
   transition: 1s;
+
 `;
 const GnbBox = styled.div`
   position: absolute;
@@ -177,14 +178,19 @@ const Lined = styled.div`
   transition: all 0.2s ease-out;
 `;
 const GnbMenu = styled.nav`
-  width: 20vw;
-  background-color: #000;
   float: right;
-  height: 100vw;
-  font-size: 50px;
-  color: #fff;
-  display: none;
+  font-size: 21px;
+  position: absolute;
+  font-weight: 700;
+  text-align: right;
+  // right: -10006%;
+  top: 60px;
+  opacity: 0;
   > ul {
     padding-top: 100px;
+  }
+  >ul>li>a{
+    text-transform: uppercase;
+    color: #fff;
   }
 `;
