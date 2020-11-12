@@ -1,9 +1,9 @@
 //마우스 움직이기
 window.addEventListener("mousemove", function (event) {
-  let x = event.clientX - 1 + "px";
-  let y = event.clientY - 1 + "px";
-  let x2 = event.clientX - 10 + "px";
-  let y2 = event.clientY - 10 + "px";
+  let x = event.pageX - 1 + "px";
+  let y = event.pageY - 1 + "px";
+  let x2 = event.pageX - 10 + "px";
+  let y2 = event.pageY - 10 + "px";
 
   document.querySelector(".cursor").style.cssText = "left:" + x + "; top:" + y;
   document.querySelector(".cursor-follower").style.cssText =
