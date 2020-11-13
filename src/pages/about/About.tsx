@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import profile from "../../assets/image/aboutcontleft_profile.jpg";
+import "../../assets/script/dd"
 
 export const About = () => {
   return (
@@ -9,6 +10,20 @@ export const About = () => {
       <div className="cursor-follower"></div>
       <AboutGrid />
       <AboutCont>
+       <Output className="info right">
+        <ul>
+            <li>pageYOffset : <span className="pageYOffset">0</span>px</li>
+            <li>#section1 : <span className="s1OT">0</span>px</li>
+            <li>#section2 : <span className="s2OT">0</span>px</li>
+            <li>#section3 : <span className="s3OT">0</span>px</li>
+            <li>#section4 : <span className="s4OT">0</span>px</li>
+            <li>#section5 : <span className="s5OT">0</span>px</li>
+            <li>#section6 : <span className="s6OT">0</span>px</li>
+            <li>#section7 : <span className="s7OT">0</span>px</li>
+            <li>#section7 : <span className="s8OT">0</span>px</li>
+            <li>#section7 : <span className="s9OT">0</span>px</li>
+        </ul>
+    </Output>
         <h2>ABOUT</h2>
         <AboutContClone>
           <AboutContLeftProfile>
@@ -28,7 +43,7 @@ export const About = () => {
           </AboutContLeftProfile>
           <div></div>
         </AboutContClone>
-        <AboutContClone>
+        <AboutContClone className="skillBox1">
           <AboutContLeftSkillTitle>
             <h3>Skill</h3>
             <p># Front-end</p>
@@ -46,7 +61,7 @@ export const About = () => {
                   바닐라자바스크립트 위주로 공부 하고 있습니다.
                 </p>
               </li>
-              <li className="Skill__htcs">
+              <li className="Skill__htcs" id="section2">
                 <span className="SkillTextIcon"></span>
                 <span className="SkillTextTitle">HTML5, CSS3</span>
                 <div className="skillBar"></div>
@@ -65,7 +80,7 @@ export const About = () => {
             </ul>
           </AboutContLeftSkillText>
         </AboutContClone>
-        <AboutContClone>
+        <AboutContClone className="skillBox2">
           <AboutContLeftSkillTitle>
             <p># Library</p>
           </AboutContLeftSkillTitle>
@@ -163,7 +178,7 @@ export const About = () => {
             </ul>
           </AboutContLeftSkillText>
         </AboutContClone>
-        <AboutContClone>
+        <AboutContClone className="skillBox3">
           <AboutContLeftSkillTitle>
             <p># Back-end</p>
           </AboutContLeftSkillTitle>
@@ -216,12 +231,12 @@ export const About = () => {
             </ul>
           </AboutContLeftSkillText>
         </AboutContClone>
-        <AboutContClone>
+        <AboutContClone className="skillBox4">
           <AboutContLeftSkillTitle>
             <p># Software</p>
           </AboutContLeftSkillTitle>
           <AboutContLeftSkillText>
-            <ul className="skillBox">
+            <ul className="skillBox skillBox4">
               <li className="Skill__git">
                 <span className="SkillTextIcon"></span>
                 <span className="SkillTextTitle">Git Hub</span>
@@ -287,7 +302,6 @@ export const About = () => {
                 <p>
                   영상이 취미라서, 컷편집이나 간단한 효과를 넣는 등 기본적인건
                   익숙한 편이고, 디자인 회사에서는 영상을 담당하기도 했습니다.
-                  외주 업무도 다수 경험이 있습니다.
                 </p>
               </li>
               <li className="Skill__sv">
@@ -299,6 +313,54 @@ export const About = () => {
                   익숙한 편이고, 디자인 회사에서는 영상을 담당하기도 했습니다.
                   외주 업무도 다수 경험이 있습니다.
                 </p>
+              </li>
+            </ul>
+          </AboutContLeftSkillText>
+        </AboutContClone>
+        <AboutContClone className="skillBox5">
+          <AboutContLeftSkillTitle>
+            <h3>History</h3>
+            <ul className="HistoryBox">
+              <li>
+              <span className="HistoryDate">2018.03~2019.04</span>
+               <p className="HistoryTitle">FMJ 인터네셔널 웹 퍼블리셔<span>더블유브이프로젝트팀</span></p>
+                <div>
+                  <p>- chopiee , wv project , fairplay , jemutshop web  4의사이트를 단독 관리를 하였습니다.</p>
+                  <p>- web관련해서는 사이트리뉴얼, 오류수정, 유지/보수/관리를 하였고,<br/>chopiee사이트는 백지상태부터 런칭 후관리까지  단독총괄로 작업하였습니다.</p>
+                  <p>- 디자인작업도  하였는데, 상세페이지,룩북촬영 / 그래픽 , 배너디자인,sn관리s,이벤트페이지<br/>상품업데이트 ,신상의류디자인 , 컨셉기획,누끼및  디테일,촬영과  코디,영상편집등을 하였습니다.</p>
+                </div>
+              </li>
+              <li>
+              <span className="HistoryDate">2018.03~2019.04</span>
+               <p className="HistoryTitle">LF몰 닥스키즈 사무, 디자인 보조</p>
+                <div>
+                  <p>- chopiee , wv project , fairplay , jemutshop web  4의사이트를 단독 관리를 하였습니다.</p>
+                  <p>- web관련해서는 사이트리뉴얼, 오류수정, 유지/보수/관리를 하였고,<br/>chopiee사이트는 백지상태부터 런칭 후관리까지  단독총괄로 작업하였습니다.</p>
+                  <p>- 디자인작업도  하였는데, 상세페이지,룩북촬영 / 그래픽 , 배너디자인,sn관리s,이벤트페이지<br/>상품업데이트 ,신상의류디자인 , 컨셉기획,누끼및  디테일,촬영과  코디,영상편집등을 하였습니다.</p>
+                </div>
+              </li>
+            </ul>
+          </AboutContLeftSkillTitle>
+          <AboutContLeftSkillText>
+            <ul className="HistoryBox">
+              <li>
+              <span className="HistoryDate">2018.03~2019.04</span>
+               <p className="HistoryTitle">러쉬 코리아 웹디자인</p>
+                <div>
+                  <p>- 신제품 목록 정리</p>
+                  <p>- 가이드에 맞게 상세 페이지 제작</p>
+                  <p>- 누끼 / 보정</p>
+                  <p>- 성분 서치</p>
+                </div>
+              </li>
+              <li>
+              <span className="HistoryDate">2018.03~2019.04</span>
+               <p className="HistoryTitle">그린아트컴퓨터 프론트엔드 실무과정</p>
+                <div>
+                  <p>- chopiee , wv project , fairplay , jemutshop web  4의사이트를 단독 관리를 하였습니다.</p>
+                  <p>- web관련해서는 사이트리뉴얼, 오류수정, 유지/보수/관리를 하였고,<br/>chopiee사이트는 백지상태부터 런칭 후관리까지  단독총괄로 작업하였습니다.</p>
+                  <p>- 디자인작업도  하였는데, 상세페이지,룩북촬영 / 그래픽 , 배너디자인,sn관리s,이벤트페이지<br/>상품업데이트 ,신상의류디자인 , 컨셉기획,누끼및  디테일,촬영과  코디,영상편집등을 하였습니다.</p>
+                </div>
               </li>
             </ul>
           </AboutContLeftSkillText>
@@ -316,6 +378,7 @@ const AboutGrid = styled.div`
   left: 50%;
   margin: 0 auto;
   width: 1px;
+  height: 1000%;
   position: absolute;
   display: inline;
   height: 100%;
@@ -340,10 +403,12 @@ const AboutContClone = styled.div`
   box-sizing: border-box;
   display: flex;
   transform: translateY(-60px);
+  transition: all 0.5s .1s ease-in;
+  &.skillBox1,&.skillBox2,&.skillBox3,&.skillBox4{opacity: 0;}
+  &.show{opacity: 1;}
 `;
 const AboutContLeftProfile = styled.div`
   padding: 2.25vw 0 2.25vw 0;
-
   > div {
     overflow: hidden;
     width: 100%;
@@ -385,18 +450,46 @@ const AboutContLeftSkillTitle = styled.div`
     font-size: 2em;
     font-weight: bold;
   }
+  // HistoryBox css
+  >.HistoryBox{
+    color: #bbb;
+    padding-top: 70px;
+  }
+  >.HistoryBox>li{
+    height: 220px;
+    padding-bottom: 30px;
+  }
+  >.HistoryBox>li>.HistoryDate{
+    display: inline-block;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 5px;
+  }
+  >.HistoryBox>li .HistoryTitle{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color:#fff;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  >.HistoryBox>li .HistoryTitle span{
+    font-size: 0.7em;
+    font-weight: normal;
+    padding-left: 10px;
+    color: #bbb;
+  }
 `;
 const AboutContLeftSkillText = styled.div`
   padding: 2.25vw 0 2.25vw 0;
   width: 50%;
-  > .skillBox {
+  > .skillBox,>.HistoryBox{
     width: 700px;
     position: relative;
     padding-left: 4vw;
     box-sizing: border-box;
     color: #fff;
   }
-  > .skillBox > li {
+  > .skillBox > li,>.HistoryBox>li{
     padding-bottom: 30px;
   }
   > .skillBox > li > .SkillTextIcon {
@@ -408,8 +501,8 @@ const AboutContLeftSkillText = styled.div`
     display: inline-block;
     background: url(http://yurimxu.dothome.co.kr/image/about-skill-logos.png);
   }
-  > .skillBox > li > .SkillTextTitle {
-    font-size: 1.5em;
+  > .skillBox > li > .SkillTextTitle,>.HistoryBox>li .HistoryTitle{
+    font-size: 2em;
     font-weight: bold;
     width: 160px;
     display: inline-block;
@@ -659,4 +752,32 @@ const AboutContLeftSkillText = styled.div`
   .Skill__sv> .SkillTextIcon {
     background-position: -64px -127px !important;
   }
+  // HistoryBox css
+  >.HistoryBox{
+    color: #bbb;padding-top: 135px;
+  }
+  >.HistoryBox>li>.HistoryDate{
+    display: inline-block;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 5px;
+  }
+  >.HistoryBox>li{
+    height: 220px;
+  }
+  >.HistoryBox>li .HistoryTitle{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color:#fff;
+  }
+  >.HistoryBox>li .HistoryTitle span{
+    font-size: 0.7em;
+    font-weight: normal;
+    padding-left: 10px;
+    color: #bbb;
+  }
+`;
+const Output =styled.div`
+position: fixed;
+z-index: 1000;
 `;
