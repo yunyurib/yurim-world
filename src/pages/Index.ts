@@ -5,3 +5,4 @@ export * from "./about/About";
 export * from "./develop/Develop";
 export * from "./design/Design";
 export * from "./contact/Contact";
+export * from "./footer/Footer";

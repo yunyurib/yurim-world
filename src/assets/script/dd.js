@@ -13,6 +13,8 @@ window.addEventListener("scroll", () => {
     document.querySelector(".skillBox3").offsetTop - 633;
   document.querySelector(".s4OT").textContent =
     document.querySelector(".skillBox4").offsetTop - 1063;
+  document.querySelector(".s5OT").textContent =
+    document.querySelector(".skillBox5").offsetTop + 3800;
 
   //출력용 - 레드용
   if (pageYOffset > document.querySelector(".skillBox1").offsetTop - 750) {
@@ -34,6 +36,11 @@ window.addEventListener("scroll", () => {
     document.querySelector(".s4OT").style.color = "red";
   } else {
     document.querySelector(".s4OT").style.color = "black";
+  }
+  if (pageYOffset > document.querySelector(".skillBox5").offsetTop + 3800) {
+    document.querySelector(".s5OT").style.color = "red";
+  } else {
+    document.querySelector(".s5OT").style.color = "black";
   }
 
   //나타나기
@@ -57,29 +64,14 @@ window.addEventListener("scroll", () => {
   } else {
     document.querySelector(".skillBox4").classList.remove("show");
   }
-  // if (pageYOffset > document.getElementById("section5").offsetTop) {
-  //   document.getElementById("section5").classList.add("show");
-  // } else {
-  //   document.getElementById("section5").classList.remove("show");
-  // }
-  // if (pageYOffset > document.getElementById("section6").offsetTop) {
-  //   document.getElementById("section6").classList.add("show");
-  // } else {
-  //   document.getElementById("section6").classList.remove("show");
-  // }
-  // if (pageYOffset > document.getElementById("section7").offsetTop) {
-  //   document.getElementById("section7").classList.add("show");
-  // } else {
-  //   document.getElementById("section7").classList.remove("show");
-  // }
-  // if (pageYOffset > document.getElementById("section8").offsetTop) {
-  //   document.getElementById("section8").classList.add("show");
-  // } else {
-  //   document.getElementById("section8").classList.remove("show");
-  // }
-  // if (pageYOffset > document.getElementById("section9").offsetTop) {
-  //   document.getElementById("section9").classList.add("show");
-  // } else {
-  //   document.getElementById("section9").classList.remove("show");
-  // }
+  if (pageYOffset > document.querySelector(".skillBox5").offsetTop + 3800) {
+    document.querySelector(".skillBox5").classList.add("show");
+  } else {
+    document.querySelector(".skillBox5").classList.remove("show");
+  }
+  if (pageYOffset > document.querySelector(".skillBox6").offsetTop + 3800) {
+    document.querySelector(".skillBox6").classList.add("show");
+  } else {
+    document.querySelector(".skillBox6").classList.remove("show");
+  }
 });
