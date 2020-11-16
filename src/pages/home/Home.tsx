@@ -101,7 +101,7 @@ const HomeGrid = styled.div`
 const HomeVisualNav = styled.nav`
   width: 100%;
   top: 0;
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 15em;
   left: 0;
   position: absolute;

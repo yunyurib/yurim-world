@@ -1,10 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import wvproject from "../../assets/image/work_wvproject.jpg";
-import chopiee from "../../assets/image/work_chopiee.jpg";
-import jemut from "../../assets/image/work_jemut.jpg";
+import {developData} from "./Develop.data";
 
 export const Develop = () => {
+  const createDevelopWorkList = developData.map((data, index) =>{
+    return(
+      <DevelopWorkItem href={data.href}>
+        <div className="ItemDate">
+          <span>{data.year}</span>
+          <p>{data.title}</p>
+        </div>
+        <p className="ItemImg">
+          <img src={data.src} alt={data.title} />
+        </p>
+      </DevelopWorkItem>
+    )
+  });
   return (
     <DevelopWrapper>
       <DevelopGrid />
@@ -21,42 +32,7 @@ export const Develop = () => {
           작업하였습니다.
         </p>
         <DevelopWorkLisr>
-          <DevelopWorkItem href="http://www.wvproject.co.kr/">
-            <div className="ItemDate">
-              <span>2019</span>
-              <p>WVproject</p>
-            </div>
-            <p className="ItemImg">
-              <img src={wvproject} alt="wvproject" />
-            </p>
-          </DevelopWorkItem>
-          <DevelopWorkItem href="http://www.wvproject.co.kr/">
-            <div className="ItemDate">
-              <span>2019</span>
-              <p>Chopiee</p>
-            </div>
-            <p className="ItemImg">
-              <img src={wvproject} alt="chopiee" />
-            </p>
-          </DevelopWorkItem>
-          <DevelopWorkItem href="http://www.wvproject.co.kr/">
-            <div className="ItemDate">
-              <span>2019</span>
-              <p>Jemut</p>
-            </div>
-            <p className="ItemImg">
-              <img src={wvproject} alt="jemut" />
-            </p>
-          </DevelopWorkItem>
-          <DevelopWorkItem href="http://www.wvproject.co.kr/">
-            <div className="ItemDate">
-              <span>2019</span>
-              <p>Fairplay</p>
-            </div>
-            <p className="ItemImg">
-              <img src={wvproject} alt="Logo" />
-            </p>
-          </DevelopWorkItem>
+          {createDevelopWorkList}
         </DevelopWorkLisr>
       </DevelopBox>
       <DevelopBox>
@@ -64,7 +40,6 @@ export const Develop = () => {
         <p>
           리뉴얼 등등
         </p>
-        
         <button className="btn left is-hidden" id="labSliderBtnLeft"></button>
           <button className="btn right" id="labSliderBtnRight"></button>
         <DevelopWebLisr>
