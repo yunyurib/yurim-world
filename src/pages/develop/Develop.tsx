@@ -7,8 +7,6 @@ import jemut from "../../assets/image/work_jemut.jpg";
 export const Develop = () => {
   return (
     <DevelopWrapper>
-      <div className="cursor"></div>
-      <div className="cursor-follower"></div>
       <DevelopGrid />
       <h2>Develop</h2>
       {/* DevelopWork */}

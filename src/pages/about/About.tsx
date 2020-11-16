@@ -5,11 +5,9 @@ import profile from "../../assets/image/aboutcontleft_profile.jpg";
 
 export const About = () => {
   return (
-    <AboutWrapper>
-      <div className="cursor"></div>
-      <div className="cursor-follower"></div>
-      <AboutGrid />
+    <AboutWrapper id="about">
       <AboutCont>
+      <AboutGrid />
        <Output className="info right">
         <ul>
             <li>pageYOffset : <span className="pageYOffset">0</span>px</li>
@@ -365,15 +363,12 @@ const AboutWrapper = styled.main`
 const AboutGrid = styled.div`
   top: 0;
   left: 50%;
-  margin: 0 auto;
+  position: fixed;
   width: 1px;
-  position: absolute;
-  display: inline;
-  height: 5300px;
+  height: 100%;
   background: hsla(0, 0%, 100%, 0.1);
 `;
 const AboutCont = styled.section`
-  min-height: 300vh;
   z-index: 3;
   background-color: #1e1e1e;
   justify-content: center;
@@ -392,7 +387,9 @@ const AboutContClone = styled.div`
   display: flex;
   transform: translateY(-60px);
   transition: all 0.5s .1s ease-in;
-  &.skillBox1,&.skillBox2,&.skillBox3,&.skillBox4,& .skillBox5,& .skillBox6{opacity: 0;transition: all 0.5s .1s ease-in;}
+  &.skillBox1,&.skillBox2,&.skillBox3,&.skillBox4,& .skillBox5,& .skillBox6{
+    // opacity: 0;
+    transition: all 0.5s .1s ease-in;}
   &.show{opacity: 1;}
   & .skillBox5.show,& .skillBox6.show{opacity: 1;transition: all 0.5s .1s ease-in;}
 `;
@@ -661,7 +658,7 @@ const AboutContLeftSkillText = styled.div`
     width: 20%;
   }
   .Skill__xampp> .SkillTextIcon {
-    background-position: 0px -126px !important;
+    background-position: 0px -127px !important;
   }
   .Skill__sql> .SkillTextTitle {
     color: #FFDA44;

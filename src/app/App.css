@@ -6,3 +6,73 @@
 d {
   background-image: url(../assets/image/about-skill-logos.png);
 }
+* {
+  cursor: none;
+}
+/* cursor design */
+.cursor {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cursor-hover {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #02f194;
+  border-radius: 50%;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cursor-hover.active {
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+  border: 1px solid #02f194;
+  background-color: rgba(255, 255, 255, 0);
+}
+.cursor-follower {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  z-index: 9999;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.7s;
+  user-select: none;
+  pointer-events: none;
+}
+.cursor-hover02.active {
+  opacity: 1;
+}
+.cursor-hover02 {
+  opacity: 0;
+  width: 1px;
+  height: 15px;
+  background: #02f194;
+  transform: translateX(-1px);
+}
+.cursor-hover02::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 1px;
+  transform: translateX(-7px) translateY(6px);
+  background: #02f194;
+}

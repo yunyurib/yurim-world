@@ -1,16 +1,12 @@
 import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import "./mouseMove";
 // import "./img";
 
 export const Home = () => {
   return (
     <HomeWrapper>
-      <div className="cursor"></div>
-      <div className="cursor-follower"></div>
       <HomeVisual>
-      <Canvas id="noise" className="noise"/>
         {/* 스크롤 효과 */}
         <CollapseBgWrap>
           <span></span>
@@ -32,16 +28,16 @@ export const Home = () => {
         </HomeGrid>
         <HomeVisualNav>
           <ul>
-            <li className="mousemovi01">
+            <li className="mousemovi">
               <Link to="/about">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/develop" className="mousemovi02">Develop</Link>
+              <Link to="/develop" className="mousemovi">Develop</Link>
             </li>
             <li>
-              <Link to="/design" className="mousemovi03">Design</Link>
+              <Link to="/design" className="mousemovi">Design</Link>
             </li>
           </ul>
         </HomeVisualNav>
@@ -142,14 +138,3 @@ const HomeVisualNav = styled.nav`
     letter-spacing: 20px;
   }
 `;
-const Canvas = styled.canvas`
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  pointer-events: none;
-  opacity: 0.1;`;
