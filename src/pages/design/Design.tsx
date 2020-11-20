@@ -6,18 +6,27 @@ import {
   designEventItem,
   designBannerItem,
 } from "./Design.data";
-import {Morebutton} from "../../components/morebutton/Morebutton";
+import { Morebutton } from "../../components/morebutton/Morebutton";
 // import "./Design";
-// todo moore버튼 컨포넌트로 만들기!!
-export const Design = () => {
-  const [designDetailLine, setDesignDetailLine] = useState(1);
+
+
+export function Design() {
+  const [designDetailLine, setDesignDetailLine] = useState<number>(1);
   const designDetailItemLineCountEvent = () => {
     const count = designDetailLine + 1;
     setDesignDetailLine(count);
   };
 
+  const scrollTop = () => {
+    window.scroll({
+      behavior: "smooth",
+      left: 0,
+      top: 0,
+    });
+  }
+
   const createDesignDetailItem = designDetailData
-    .filter((data, index) => index <= designDetailLine * 4 - 1)
+    .filter((data, index) => index <= designDetailLine * 8 - 1)
     .map((data, index) => {
       return (
         <li className="liSmall" key={index}>
@@ -79,7 +88,7 @@ export const Design = () => {
           <h3>Detail page</h3>
           <p>의류,러쉬,악세사리 상세 페이지 작업물</p>
           <DesignContList>{createDesignDetailItem}</DesignContList>
-          <Morebutton btnEvent={designDetailItemLineCountEvent}/>
+          <Morebutton btnEvent={designDetailItemLineCountEvent} />
           {/* <button type="button" onClick={designDetailItemLineCountEvent}>
             more
           </button> */}
@@ -87,7 +96,7 @@ export const Design = () => {
         <DesignContClone>
           <h3>Event</h3>
           <DesignContList>{createDesignEventItem}</DesignContList>
-           {/* more */}
+          {/* more */}
         </DesignContClone>
         <DesignContClone>
           <h3>Banner</h3>
@@ -95,6 +104,7 @@ export const Design = () => {
           {/* more */}
         </DesignContClone>
       </DesignCont>
+      <ScrollTopButton type="button" onClick={scrollTop}>Top</ScrollTopButton>
     </DesignWrapper>
   );
 };
@@ -216,4 +226,17 @@ const DesignContList = styled.ul`
     transform: translateY(2px);
     transition: 0.5s;
   }
+`;
+const ScrollTopButton = styled.button`
+width: 50px;
+position: fixed;
+right: 10px;
+height: 50px;
+background-color: #1d1d1d;
+border-radius: 50%;
+text-align: center;
+bottom: 10px;
+font-weight: bold;
+color: #02f093;
+border: 1px solid #02f093;
 `;

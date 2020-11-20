@@ -1,9 +1,9 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 // import "./img";
 
-export const Home = () => {
+export function Home() {
   return (
     <HomeWrapper>
       <HomeVisual>

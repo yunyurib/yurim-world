@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Footer = () => {
+export function Footer() {
   return (
     <FooterWrapper>
       푸터입니다!!

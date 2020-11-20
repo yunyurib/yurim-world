@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { aboutDataFrontend, aboutDataLibrary,aboutDataBackend,aboutDataSoftware} from "./About.data";
+import { aboutDataFrontend, aboutDataLibrary, aboutDataBackend, aboutDataSoftware } from "./About.data";
 import profile from "../../assets/image/aboutcontleft_profile.jpg";
 // import "../../assets/script/dd"
 
-export const About = () => {
+export function About() {
   const createAboutContLeftSkillFrontend = aboutDataFrontend.map(
     (data, index) => {
       return (
@@ -146,7 +146,7 @@ export const About = () => {
           </AboutContLeftSkillTitle>
           <AboutContLeftSkillText>
             <ul className="skillBox">
-            {createAboutContLeftSkillBackend}
+              {createAboutContLeftSkillBackend}
             </ul>
           </AboutContLeftSkillText>
         </AboutContClone>
@@ -156,7 +156,7 @@ export const About = () => {
           </AboutContLeftSkillTitle>
           <AboutContLeftSkillText>
             <ul className="skillBox skillBox4">
-            {createAboutContLeftSkillSoftware}
+              {createAboutContLeftSkillSoftware}
             </ul>
           </AboutContLeftSkillText>
         </AboutContClone>
@@ -243,7 +243,7 @@ export const About = () => {
                 <div>
                   <p>
                     - NCS기반 과정, 기획과 설계,
-                    디자인, HTML, CSS, Javascript, jQuery 
+                    디자인, HTML, CSS, Javascript, jQuery
                   </p>
                   <p>
                     {" "}

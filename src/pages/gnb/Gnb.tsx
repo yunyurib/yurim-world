@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 // import "../../assets/script/Gnb"
 
-export const Gnb = () => {
+export function Gnb() {
   return (
     <GnbWrapper>
       <GnbBox>
@@ -42,24 +42,6 @@ export const Gnb = () => {
           <span></span>
         </GnbHam>
       </GnbBox>
-      <GnbMenu className="dd">
-        <ul>
-          <li>
-            <Link to="/about" className="ab">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/about">Develop</Link>
-          </li>
-          <li>
-            <Link to="/about">Design</Link>
-          </li>
-          <li>
-            <Link to="/about">Design</Link>
-          </li>
-        </ul>
-      </GnbMenu>
     </GnbWrapper>
   );
 };
@@ -176,21 +158,4 @@ const Lined = styled.div`
   height: 6px;
   opacity: 0;
   transition: all 0.2s ease-out;
-`;
-const GnbMenu = styled.nav`
-  float: right;
-  font-size: 21px;
-  position: absolute;
-  font-weight: 700;
-  text-align: right;
-  // right: -10006%;
-  top: 60px;
-  opacity: 0;
-  > ul {
-    padding-top: 100px;
-  }
-  >ul>li>a{
-    text-transform: uppercase;
-    color: #fff;
-  }
 `;

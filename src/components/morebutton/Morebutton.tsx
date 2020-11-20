@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-export const Morebutton = ({ btnEvent }) => {
+
+export interface IMorebutton {
+  btnEvent: () => any;
+}
+
+export function Morebutton({ btnEvent }: IMorebutton) {
   return (
     <MorebuttonWrapper onClick={btnEvent}>
       more

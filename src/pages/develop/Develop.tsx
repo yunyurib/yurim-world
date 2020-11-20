@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {developData} from "./Develop.data";
+import { developData } from "./Develop.data";
 
-export const Develop = () => {
-  const createDevelopWorkItem = developData.map((data, index) =>{
-    return(
+export function Develop() {
+  const createDevelopWorkItem = developData.map((data, index) => {
+    return (
       <li className="liSmall">
         <a href={data.href} target="block">
           <div>
@@ -41,11 +41,7 @@ export const Develop = () => {
           리뉴얼 등등
         </p>
         <DevelopWebLisr>
-            <li>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
+
         </DevelopWebLisr>
       </DevelopBox>
     </DevelopWrapper>
