@@ -1,29 +1,172 @@
 export const designDetailData = [
+    // wv
     {
         href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "브랜드명 : 타임 트래벌러",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        title: "WV : 타임 트래벌러반팔",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"https://store.musinsa.com/app/goods/983931",
+        title: "WV : 컨트롤러반팔",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010078982.jpg?1564016473",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"http://yurimxu.dothome.co.kr/image/fmj/YRSS7253.html",
+        title: "WV : 슈어 체크반팔",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010092292.jpg?1564016572",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"http://www.fairplay142.com/shop/shopdetail.html?branduid=134535&search=yr&sort=sellcnt&xcode=017&mcode=003&scode=006&GfDT=bmx0W1U%3D",
+        title: "WV : 초이스 아노락",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170030002312.jpg?1564016340",
         text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
         button:"Explore"
     },
     {
         href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "브랜드명 : 타임 트래벌러",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        title: "WV : 스크리블 맨투맨",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010113582.jpg?1540804384",
         text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "브랜드명 : 타임 트래벌러",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        href:"http://yurimxu.dothome.co.kr/image/fmj/YRKN7217.html",
+        title: "WV : 레브 니트",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010075272.jpg?1564016443",
         text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "브랜드명 : 타임 트래벌러",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        href:"http://www.fairplay142.com/shop/shopdetail.html?branduid=134538",
+        title: "WV : 스위드 코치자켓",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170030004992.jpg?1564016339",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"http://www.fairplay142.com/shop/shopdetail.html?branduid=137505",
+        title: "WV : 추즈업 후리스 후드",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170030011992.jpg?1564016358",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"https://store.musinsa.com/app/goods/9909225",
+        title: "WV : 챈스머신 케이스",
+        src:"https://image.msscdn.net/images/goods_img/20190321/990922/990922_1_500.jpg",
+        text:"#케이스디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    // lush
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001327",
+        title: "러쉬 : 스노우맨",
+        src:"https://lh3.googleusercontent.com/proxy/WqFw4I_4uOSnZLei1WzJeiPtPA89m2OoX-tgnsC6wjfXvI5RPY07au5B3qSq5leup10gZ4BSdtUlB9dLxa9Gdm-uxlZFYnwC1cAV1VSf1V56yy9ZaSM",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001316",
+        title: "러쉬 : 몬스터스볼",
+        src:"https://photo.akmall.com/image0/goods/84/61/90/35/84619035_M_500.jpg",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001317",
+        title: "러쉬 : 펌킨펌킨",
+        src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdVTxNrrM_WT84CLsIYfFpIJh0JCFgO-lxw&usqp=CAU",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000000562",
+        title: "러쉬 : 그루비카인드",
+        src:"https://contents.lotteon.com/itemimage/LE/12/01/36/04/20/_1/20/60/25/28/3/LE1201360420_1206025283_1.jpg/dims/resizef/824X824",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001331",
+        title: "러쉬 : 슛포더스타스",
+        src:"data:image/jpeg;base64,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",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001333",
+        title: "러쉬 : 징글 벨스",
+        src:"https://contents.lotteon.com/itemimage/LD/73/60/90/88/2_/0/LD736090882_0_1.jpg/dims/resizef/824X824",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=174",
+        title: "러쉬 : 인터갈릭틱",
+        src:"https://lh3.googleusercontent.com/proxy/5EjWsh4Scx-fN4bpoiHplpfLiEUuYv0KTbh0t3itwfWr_z34OAgCc6AAncde--mVe_s47fHi1ptE54FnVTl57pflNqcYcy6mJJn_wZMOeDDjtXHa4lE",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000000687",
+        title: "러쉬 : 캔디 레인",
+        src:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw4QEBUSEhEQEhAOEA8QEBISEBAODxIPFRIXFhUSFRUaKCghGBonGxUVITEiJTUrLi46Fx83ODMtNystMCsBCgoKDg0OFw8QFysdGB0rKystKystKy0rLSsrLS0tLSstLS0rLS0rKy0tNzcrNy0rKysrKzcrNysrLSs3Ny0rK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xABNEAABAwIDBQMFCwcJCQAAAAABAAIDBBEFEiEGBxMxQSJRcTJhcpGxFCMlMzVSU4GSwdIVQkODobLCCBYkVHO0w+HwFzR0dYKUoqPR/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAdEQEBAAICAwEAAAAAAAAAAAAAAQISETEDE1FB/9oADAMBAAIRAxEAPwDt8kjWgucQ1rQXOcSA0NGpJPQKw+vgDGyGWIRvyhjzI0McXeTldyN+ixdp6d8tDUxsaXPkpKljGi13PdE4Nbr3khc0qKHEp8Fho/yfPHNh3uB9nyU4FRwXAPbGQ7Q2udbetB1V+IU7c95ohwLca8jBwri4z69n61THilM5rHtnhLJnBkThKwskeeTWG9nHTkFymv2frapmIzvoagNxCsw+SOn49PFWNip2EGXKQ9j+0R72619dRpfFZsxistLTs4BgczHoqlsjIaSCobT5LGqlhYTGHg2065eVrXDs0FTHJmyPY/huLH5XNdkeObHW5OHcVdUJ3YYNVUgrm1AeXTYpVTMkeGB08bg201m6DNYm2nPkpsgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg1e1NO+Whqo4xmkkpKljG3Dcz3RODRc2A1I1Kg0mwZ/ocbYqDK0VLpy+hgdAyR0MTGB8IeOI/MHDPdT7H2RupKhsmfhup5xJkF5MhjcHZB1da9lAKmPDw7tGrN38hPTz86uSpDA4FzyOLGTnBLtGtHa0AYmB7OzsqaeSeifIYqTCYsxbh9Y6GaHPxLySPD2c2m8YJsNOQVin2XrRHIyOmMXE9xF0sjqUzmZuIwzaSscG1YDGyuD5GNfoNSXOAuMkwwtY29e4xhrmvaKdj+zwYWvL2DtEufcWvbhyAWBscurw6hjIicKpti6IXdRcItp6R0I7TuzHaGZwBNtbIJdslQTwy1plfxONWMkZJ72M7BSQMvlZ5NnMc2xsezfqpGo9sW6HhyiIyENqZM3ELXEOIDtCCRl7Qt9/NSFAREQEREBERBodpdscNw4tFVOI3PGZrQySV5be17MBsLg8+4qPP3xYEBfjTEd4pp7eshc3/lBlwxJjcxINHDIAbdm8srcrbfm9i+tzdx1tYDmLpHFgbmOUcm9Lqj6Wh3xYG7lLP/ANtMfYFtcF3iYNWPEcNWwyPIa1j2Swuc4mwAzgXJK+VaWV7L5XEBws7kbhbTZepkjqIcl+JxohHpms8vAaB39rL6k4H2Ai8F+vPqvVAREQEREBERAREQEREBERAVHDb80crchy7vBVogoMbTzaPUF6WN7h6h/roFUiDwNA5AC5ufHvXqIgIiICIiAiIg+eP5Qo+FIv8Al8H94qFy8t0Xf97+HUNQ+OQxyTTsaInFjn8NkYLiM+XXm93K6gcezmGZDmYcw6iPEXMH1cyfAri+WS8LrXPWtK3OyA/p9J/x1F/eGKUMwTCADe4drazMQiHgQc11tNgcCww18bjnDYHNla4OkdDxGODmZuIARq3/ADFlJ5Zbwur6BReNcCLg3B5Eagr1aORERAREQEREBERAREQEREBERAREQEREBERARFTI8NBJ0DQSfAIMevrmQtu46nyWjmSoxiGLSzXF8rPmt6jznqsbEKx0ry89eQ7m9ArDBdYZZtJipMAOnerYw5ncVmWXt1m6YLsOZ5/WqGYZC03DbOJuTyJPnIWxuvCEFFBUzwH3uQlt9WOGZp9lvqUvwzE2Tj5rwO037x3hQ17F7TzuY4OabOabgrTHPhzcXQEWPQVQljDx15jucOYWQt2YiIgIiICIiAiIgIiICIiAiIgIiICIiAtfj0mWnf58rfWRf9l1sFoNt65tPRukcHENczRtidT51L0RGTzV+Nc+qN5dKx1uDUG3mi/EqG71aUfoKj/1fiWGla7R0gpZc7bvYpP6vU+qL8SrG9ui+gqfVF+JNKbR0HKllABvaofoKr7MP41dbvVw482VLfGNh9jiml+G0TlwVh7dVEG7z8NP048YT9xVbN4mGOPxkg8YJj7AVNKbR0/ZWQ2e3oMrh+0H2Bb9Q7YHF6epMhifnAay/Ze0i5PRwCmK3x6Z3sREXSCIiAiIgIiICIiAiIgIiICIiAiIgKHb2D8GSenF+8piobva+S5PTi/eQfMdYe0VjkBZFX5RXUKSqw7A6OGCrpRPUYlSTVFVaOJ8sbJBlgiu8jK3yr26tJsbqq5I4WVDl2HdFsvAxvHqYmzVNVSVEtJTvYJAKWPKx0xaer3Pa1t+YzHqq9gN3kMNNUVFaKWeR8E8FPE17alsUrInulzOF28QZQLtJy2drdEcaargC7PsjsxTNp8PoJqWGafETJidY6QOD4KRrbRAOaWuaXXY22o1fcFRzEMEw7FWVtThzXU0uHh0jqfsGlnpGZg2WEgAxvLWFxabgk+e4g58FscRwiqpHMFRC+F0sbZY2vADjGeTrcx4GxXUa/ZPDKCduKZPgyno6Wop4uI6U1VfIXcNl3Em1gx56ag2sHLl2MYtPW1D6id2aWZ13WuGgcgxo6NA0AVV2XcG+/ujzMh9rl2Bcf3BD/ePQh9r12BRBERAREQEREBERAREQEREBERAREQEREBQ3ez8mSenF+8pkodvZ+TJP7SL2oPnHCooH10DZ3NbA6pgE7naMEPEGfMegtfXkutzYtgZxaSokroZJpIyWTAg09HTxMaBFC/k6of2nXHK7gNbZuLVY7RWRgWGPq6qGmZfNUSsj8Gk9t3gGhx+pB0iHeUyrZifFMNLG/DpIaOIN99keQ5jGufqXOAI7Is0ZjpzKrw7avDIqzDKOOdpw6loZ4qiUh8THVNTEc5cCBY5gNehkcO9bLamfD6OtIqIMJioaVjI4qf3LFV4lUNDc3Za3SFpc51nPI5X1ure7yipYqyGrZSiGTGZ5jRQHNJ7kw2JhdJNqLNdI8NaO4P7J6IKW7XYYXYlWyVrWPqh+TqNkcbpKqGkjGUubG7LbOTnBvYG1zcFog0m00DYDh+HRe5KerfGyqqqh4kqpmEhoMrm9mOMAuu1t9L8ruvKKKlNNT4xiEkLXVNXWy0VE1zGSOEs0pLiwG4J98B/VELf12w9G4YdRxxx3oa5sNfI2NoLy2jbVS53cy13ZGvzgO5Bz7ePjcUjoKGllMlDhkEccT8xdxpSwZpT0NhZo7u1bQqHM5rdbbY2a+vnqL3Y6Qsh7hTs7Mdu67RfxcVpWc1Vd13BjSo9GH2vXXVyTcL5NR6MPteutqIIiICIiAiIgIiICIiAiIgIiICIiAiIgKIb1B8GyenH7VL1Ed6nybJ6cftQfMNcO2VJt3WMUtC6pq5XgVMNK9lBGWPdnqJA4ZrgECwaAb20kKjVf5ZWNZVU4wfbplTw6bGYYqymu1vuh4eysgbp2hJH23jTUcz1JW4h3mxjGopBLLHg9KDDDDGwsbw207mMc6MauGc3APkgjQKCYFs3U1oe6LIBFlBMnEY1z3ENbG1waW5y5zGgEjV7e9Z+LbC1EExZxYnRsZLJJO4iONrYwXPLW3L3gNyXyg2c/Lz5xEupNtcIc7DoC6WOkoKmqral0kLnF9Td74S0MzEjPI468hYKxQ7y2Mp8UBEvujEKiaSkIa2zGyx8IFzr9kta1nf089opQ7AYpJY8FrGvYXtc+Vha7UgMGTMc5yus0gE5T3LAxnA56PI2fI2SQy+9hzZHBjHBokLm3GVzs4H9m5BrgFVHzVKrj5qq7tuF8mo8Ifa9dbXJdww7NR4Qe1660ogiIgIiICIiAiIgIiICIiAiIgIiICIiAohvU+TZPTj9ql6h29c/Bj/Ti9qD5kryM51WLnHePWt1R4tLTynhmIcR8VzK0Oa0sLsrvMBnJPfbuuDtZMfqXFjs2HuEOcxxsMkbvinsIbY5g4g6WI1a2x76qO4TjMtI57oiwOkj4RztbIAM7XhwadMwLBYkG1yq63aaumjfFJUPdFN8ZHZjIyeLxScrQACX9okak81KIcdmaGnhYU5scQbcOdcA2Gh/Nte1uQtboFbbi01i0w4WQY2MaLtDW2zklvmdmaHDqLDS6I0jNs8RIyun4jS6JxY9rC20bmOYwAWys97aMosOfeb4WK4tLUycSVzM1soysjiaG5ibANA0uTzUtnxaZ4kYKfDGmRssZyuGX3xkN3taPzrEkHlo/TlfEw+uqo2uZGKAB5MjQ5xJY1sQbYfObliA15nUoIlmHePWrkPNSduKVDWWElC0GXjEcVxBzzcS2nIXd36hvXrra/EZjaN0sMjcmT3prLACQPFiLdWj6gNL6orsu4gdio8IP411dco3EeRUeEH8a6uogiIgIiICIiAiIgIiICIiAiIgIiICIiAodvXHwZJ6cXtUxUP3rfJj/Ti9qD5rdVviecuXtc7tBv8Af1RmNTA3yxG3IGPTmDyFvm/tKsV3lFYyqs9+LyF2Yx058nTgi3Z5dfP1Vr8qu+hpr3vfgi99fP5+XLQKmnpJZGvcyOR7YW55XMY57Y2fPeR5LfOVXFhNU/IWU9Q8TiQwlsMrhKI/jDHYdsN62vbqiPPyo4294phYW+JGvlfc631A81fbjMlyeFT6uzW4PnBtoeWisNwuq4TZvc8/BeQ1kvBl4TnE2Aa+1iSdLBVTYfOwOL4ZmCN4jeXxSMDJCLhjiR2XW1sdUFx+LyE3yQA2Y3SIcmA25379fuVL8QlkJDstnm5AaBrcHnz6LDIVcPNFd43D+RUeEH+IurrlW4j4uo/Uf4i6qogiIgIiICIiAiIgIiICIiAiIgIiICIiAodvX+TH+nF7VMVp9q4WPpi17Q5pc24cA4H6ilvBHyZW+UVjLulRshh0h7VNHr80GP8AdssY7usLd+iePCab/wCrj2R1qgOwuLUUDK2GrfLGyvpW07XxxcZzTmJJLdOhUqwDbDCKaOmJnqC/CG4pFDH7mN6ttS4GN4cDaPQah3UnoNdi7djhp+nHhMT7QVZfupoDylqh4SRH2sV3hqxodtsM/JkMEk8zpYYaGJsbYZ4pGOhka53Fc08KWMBummb6zpi7f7aUFbS1MUAaHyYjFPGWxTMM0LYA0zSF2gdm7NtNGjRbD/ZRQ/T1f24PwL07qaL6er+1B+BN4mtchKkGyGL09K6QzROk4gjyZWMeWlpcSbucAOYPI3yjlzU7O6yhH6arP/XD+BXIt3GHt6zu9KUfcAnsi61Md1NbDOaiSJuRrmU2Ztg057y3JtzNsv8AoLoSh+7zB4KVsrYmkB3CvdznE2zW5+KmCsvLkREVBERAREQEREBERAREQEREBERAREQFqdpviD6TfatstdtBFmp325gB32XAn9gKl6WdoXdXWPWOSqmuXlbM0PVQcsYSL0SJyjJzLwuVjiIZE5OFT3K04rxz1bLk5El2S/Sfq/4lIVodko/e3u+c8D1D/Nb5enDplexERdIIiICIiAiIgIiICIiAiIgIiICIiAqXtBBB1BBBHeCqkQc7xaldTyljr25sPRzOh8e9YglXSamljlblkY17e5wBHj5itLPshSON28WPzMkuP/K6xy8d/Gkz+omJV7xlJHbFw9Jpx4mM/wAKo/mWz+sS/ZYuPXku0R4zLzjKR/zMZ9PJ9liqbsZD1mnPhwx9yerI3iMGVGPL3BrQXOcbADUkqWM2OpRzdM7xe0ewBbXD8Kp4Pi42tPIu1c8j0jqrPFf1LnFeGUvBiazq0do97jqT61lIi9DMREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//Z",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000000684",
+        title: "러쉬 : 엔젤 헤어",
+        src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhlRIwDxP6qW3jeQ1YVwv0wHzp7FRUmxzQ_Q&usqp=CAU",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001464",
+        title: "러쉬 : 베스트위시스",
+        src:"https://img.danawa.com/prod_img/500000/811/061/img/10061811_1.jpg?_v=20191203171845",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    {
+        href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001347",
+        title: "러쉬 : 스노우 페어리",
+        src:"data:image/jpeg;base64,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",
+        text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
+        button:"Explore"
+    },
+    // pl
+    {
+        href:"https://store.musinsa.com/app/goods/1028872",
+        title: "PL : 포메이션 반팔",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010095042.jpg?1561974121",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"https://www.player.co.kr/store/detail/1465613/0",
+        title: "PL : 메트로폴리스 반팔",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010095032.jpg?1561974122",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"http://www.fairplay142.com/shop/shopdetail.html?branduid=138105",
+        title: "PL :오사카인더시티",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010134372.jpg?1574305508",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+    {
+        href:"http://www.fairplay142.com/shop/shopdetail.html?branduid=137744",
+        title: "PL : 리플렉션 후드",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010074422.jpg?1567735932",
         text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
         button:"Explore"
     }
