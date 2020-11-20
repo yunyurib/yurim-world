@@ -3,17 +3,19 @@ import styled from "styled-components";
 import {developData} from "./Develop.data";
 
 export const Develop = () => {
-  const createDevelopWorkList = developData.map((data, index) =>{
+  const createDevelopWorkItem = developData.map((data, index) =>{
     return(
-      <DevelopWorkItem href={data.href}>
-        <div className="ItemDate">
-          <span>{data.year}</span>
-          <p>{data.title}</p>
-        </div>
-        <p className="ItemImg">
-          <img src={data.src} alt={data.title} />
-        </p>
-      </DevelopWorkItem>
+      <li className="liSmall">
+        <a href={data.href} target="block">
+          <div>
+            <img src={data.src} alt={data.title}></img>
+          </div>
+          <p className="title">{data.title} <span className="year">[2018-2019]</span></p>
+          <p>{data.text}</p>
+          <button type="button">Explore<span>&rarr;</span>
+          </button>
+        </a>
+      </li>
     )
   });
   return (
@@ -24,15 +26,13 @@ export const Develop = () => {
       <DevelopBox>
         <h3>Work</h3>
         <p>
-          F&J 근무 시, 4의사이트를 단독 관리를 하였습니다.
+          FMJ 근무 시, 4의사이트를 단독 관리를 하였습니다.
           <br />
-          web관련해서는 사이트리뉴얼, 오류수정, 유지/보수/관리를 하였고,
-          <br />
-          chopiee사이트는 백지상태부터 런칭 후관리까지 단독총괄로
+          chopiee사이트는 백지상태부터 로고, 런칭 후관리까지 단독총괄로
           작업하였습니다.
         </p>
         <DevelopWorkLisr>
-          {createDevelopWorkList}
+          {createDevelopWorkItem}
         </DevelopWorkLisr>
       </DevelopBox>
       <DevelopBox>
@@ -40,18 +40,8 @@ export const Develop = () => {
         <p>
           리뉴얼 등등
         </p>
-        <button className="btn left is-hidden" id="labSliderBtnLeft"></button>
-          <button className="btn right" id="labSliderBtnRight"></button>
         <DevelopWebLisr>
             <li>
-              <div>
-                <div className="image-wrap">
-
-                </div>
-                <div className="text-wrap">
-
-                </div>
-              </div>
             </li>
             <li></li>
             <li></li>
@@ -124,101 +114,88 @@ const DevelopBox = styled.section`
   }
   
 `;
-const DevelopWorkLisr = styled.div`
+const DevelopWorkLisr = styled.ul`
   width: 100%;
   display: flex;
-  padding: 30px 0 0 0;
   justify-content: space-between;
-`;
-
-const DevelopWorkItem = styled.a`
-  position: relative;
-  display: block;
-  width: 22%;
-  box-sizing: border-box;
-  color:#bbb;
+  flex-wrap: wrap;
   margin-bottom: 50px;
-  transition: all 0.5s ease-out;
-  &:hover img {
-    transform: translate3d(0, 0, 0) scale(1.1);
-    filter: none;
+  > .liM {
+    width: 31.5% !important;
   }
-  &:hover .ItemImg {
-    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.158);
-    transform: translate(0px, -10px);
-  }
-  > .ItemDate {
-    padding-bottom: 20px;
-    display: block;
-    width: 100%;
-    line-height: 30px;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  > .ItemDate > span {
-    border-bottom: 1px solid #bbb;
-    font-size: 0.5em;
-    font-weight: normal;
-  }
-  > .ItemImg {
-    width: 100%;
-    height: 15vw;
-    position: relative;
+  > .liSmall {
+    width: 23%;
+    background-color: #fff;
+    border-radius: 0.4rem;
     overflow: hidden;
-    transition: all 0.5s ease-out;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.5s;
+    margin-top: 50px;
   }
-  > .ItemImg::before {
+  > .liSmall:hover {
+    box-shadow: 0 3rem 4rem rgba(0, 0, 0, 4);
+    transform: translateY(-5px);
+  }
+  > .liSmall > a:hover > button > span {
+    transform: translateY(2px) translateX(10px);
+  }
+  > .liSmall > a {
     display: block;
-    content: "LOADING";
-    color: #fff;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    font-size: 1.6rem;
-    letter-spacing: 4px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    font-family: jost-h;
-    text-align: center;
-    margin: auto;
   }
-  & img {
-    transition: all 0.8s;
-    width: 120%;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    -webkit-filter: grayscale(100%);
-    -webkit-filter: gray;
+  > .liSmall > a > div {
+    display: block;
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  > .liSmall > a > .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    padding: 15px 25px 0px;
+  }
+  > .liSmall > a >.title>.year{
+    font-size: 1rem;
+  }
+  > .liSmall > a > p {
+    font-size: 1rem;
+    padding: 0px 25px 15px 25px;
+  }
+  > .liSmall:hover img {
+    -webkit-filter: grayscale(0%);
+  }
+  > .liSmall > a img {
+    width: 100%;
     filter: gray;
+    -webkit-filter: grayscale(100%);
+  }
+  > .liSmall > a > button {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    color: #02f194;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 0.4rem;
+    -webkit-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  > .liSmall > a > button > span {
+    display: inline-block;
+    padding-left: 10px;
+    transform: translateY(2px);
+    transition: 0.5s;
   }
 `;
 
 const DevelopWebLisr = styled.ul`width: 100%;
 display: flex;
-padding: 30px 0 0 0;
-// flex-wrap: wrap;
-justify-content: space-between;
-border:1px solid red;
-text-align: left;
-    height: 60vh;
-    margin-left: 10vw;
-    overflow: hidden;
-    position: relative;
->li{
-  width: 100%;
-    position: absolute;
-    opacity: .15;
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
-    padding: 0 150px;
-    border:1px solid blue;
-}
->li>div{
-  float: left;
-  width: 50%;
-  padding: 40px;
-}
 `;
