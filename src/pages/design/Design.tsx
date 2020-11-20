@@ -1,31 +1,41 @@
 // import { Button } from "@/components/button/Button";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import {
   designDetailData,
   designEventItem,
   designBannerItem,
 } from "./Design.data";
+import {Morebutton} from "../../components/morebutton/Morebutton";
 // import "./Design";
 // todo moore버튼 컨포넌트로 만들기!!
 export const Design = () => {
-  const createDesignDetailItem = designDetailData.map((data, index) => {
-    return (
-      <li className="liSmall">
-        <a href={data.href}>
-          <div>
-            <img src={data.src} alt={data.title}></img>
-          </div>
-          <span>{data.title}</span>
-          <p>{data.text}</p>
-          <button type="button">
-            {data.button}
-            <span>&rarr;</span>
-          </button>
-        </a>
-      </li>
-    );
-  });
+  const [designDetailLine, setDesignDetailLine] = useState(1);
+  const designDetailItemLineCountEvent = () => {
+    const count = designDetailLine + 1;
+    setDesignDetailLine(count);
+  };
+
+  const createDesignDetailItem = designDetailData
+    .filter((data, index) => index <= designDetailLine * 4 - 1)
+    .map((data, index) => {
+      return (
+        <li className="liSmall" key={index}>
+          <a href={data.href}>
+            <div>
+              <img src={data.src} alt={data.title} />
+            </div>
+            <span>{data.title}</span>
+            <p>{data.text}</p>
+            <button type="button">
+              {data.button}
+              <span>&rarr;</span>
+            </button>
+          </a>
+        </li>
+      );
+    });
+
   const createDesignEventItem = designEventItem.map((data, index) => {
     return (
       <li className="liSmall">
@@ -69,41 +79,20 @@ export const Design = () => {
           <h3>Detail page</h3>
           <p>의류,러쉬,악세사리 상세 페이지 작업물</p>
           <DesignContList>{createDesignDetailItem}</DesignContList>
-          {/* <a className="more">
+          <Morebutton btnEvent={designDetailItemLineCountEvent}/>
+          {/* <button type="button" onClick={designDetailItemLineCountEvent}>
             more
-            <Lined className="lined lined_dot_1"></Lined>
-            <Lined className="lined lined_dot_2"></Lined>
-            <Lined className="lined lined_dot_3"></Lined>
-            <Lined className="lined lined_dot_4"></Lined>
-            <Lined className="lined lined_dot_5"></Lined>
-            <Lined className="lined lined_dot_6"></Lined>
-          </a> */}
+          </button> */}
         </DesignContClone>
         <DesignContClone>
           <h3>Event</h3>
           <DesignContList>{createDesignEventItem}</DesignContList>
-          {/* <a className="more">
-            more
-            <Lined className="lined lined_dot_1"></Lined>
-            <Lined className="lined lined_dot_2"></Lined>
-            <Lined className="lined lined_dot_3"></Lined>
-            <Lined className="lined lined_dot_4"></Lined>
-            <Lined className="lined lined_dot_5"></Lined>
-            <Lined className="lined lined_dot_6"></Lined>
-          </a> */}
+           {/* more */}
         </DesignContClone>
         <DesignContClone>
           <h3>Banner</h3>
           <DesignContList>{createDesignBannerItem}</DesignContList>
-          {/* <a className="more">
-            more
-            <Lined className="lined lined_dot_1"></Lined>
-            <Lined className="lined lined_dot_2"></Lined>
-            <Lined className="lined lined_dot_3"></Lined>
-            <Lined className="lined lined_dot_4"></Lined>
-            <Lined className="lined lined_dot_5"></Lined>
-            <Lined className="lined lined_dot_6"></Lined>
-          </a> */}
+          {/* more */}
         </DesignContClone>
       </DesignCont>
     </DesignWrapper>
@@ -148,35 +137,8 @@ const DesignContClone = styled.div`
     font-size: 1.5em;
     padding-top: 20px;
   }
-  & .more {
-    width: 8%;
-    padding: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    display: block;
-    margin: 40px auto;
-    border: 1px solid #ccc;
-    color: #ccc;
-    background-color: #1d1d1d;
-    position: relative;
-  }
-  & .more:hover {
-    border: 1px solid #02f194;
-    color: #fff;
-  }
-  & .more:hover .lined {
-    opacity: 1;
-  }
 `;
-// const Lined = styled.div`
-//   position: absolute;
-//   background: #1e1e1e;
-//   border: 1px solid #02f194;
-//   width: 6px;
-//   height: 6px;
-//   opacity: 0;
-//   transition: all 0.2s ease-out;
-// `;
+
 const DesignContList = styled.ul`
   width: 100%;
   display: flex;
