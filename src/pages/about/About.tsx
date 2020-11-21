@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { aboutDataFrontend, aboutDataLibrary, aboutDataBackend, aboutDataSoftware } from "./About.data";
 import profile from "../../assets/image/aboutcontleft_profile.jpg";
-// import "../../assets/script/dd"
 
 export function About() {
   const createAboutContLeftSkillFrontend = aboutDataFrontend.map(
@@ -57,40 +56,6 @@ export function About() {
     <AboutWrapper id="about">
       <AboutCont>
         <AboutGrid />
-        <Output className="info right">
-          <ul>
-            <li>
-              pageYOffset : <span className="pageYOffset">0</span>px
-            </li>
-            <li>
-              #section1 : <span className="s1OT">0</span>px
-            </li>
-            <li>
-              #section2 : <span className="s2OT">0</span>px
-            </li>
-            <li>
-              #section3 : <span className="s3OT">0</span>px
-            </li>
-            <li>
-              #section4 : <span className="s4OT">0</span>px
-            </li>
-            <li>
-              #section5 : <span className="s5OT">0</span>px
-            </li>
-            <li>
-              #section6 : <span className="s6OT">0</span>px
-            </li>
-            <li>
-              #section7 : <span className="s7OT">0</span>px
-            </li>
-            <li>
-              #section7 : <span className="s8OT">0</span>px
-            </li>
-            <li>
-              #section7 : <span className="s9OT">0</span>px
-            </li>
-          </ul>
-        </Output>
         <h2>ABOUT</h2>
         <AboutContClone>
           <AboutContLeftProfile>
@@ -119,7 +84,7 @@ export function About() {
             </p>
             <p>
               Or, why don’t you email me?
-              <span> rain00sun0ze@gmail.com</span>
+              <span>xruruca-@naver.com</span>
             </p>
           </AboutContLeftInfo>
         </AboutContClone>
@@ -682,8 +647,4 @@ const AboutContLeftSkillText = styled.div`
     padding-left: 10px;
     color: #bbb;
   }
-`;
-const Output = styled.div`
-  position: fixed;
-  z-index: 1000;
 `;

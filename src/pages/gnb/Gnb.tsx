@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-// import "../../assets/script/Gnb"
 
 export function Gnb() {
   return (
     <GnbWrapper>
       <GnbBox>
         <GnbLogo>
-          <Link to="/" className="logo">
+          <Link to="/" className="gnblogolink">
             YR
             <Lined className="lined lined_dot_1"></Lined>
             <Lined className="lined lined_dot_2"></Lined>
@@ -38,9 +37,7 @@ export function Gnb() {
             <Lined className="lined lined_dot_6"></Lined>
           </a>
         </GnbLink>
-        <GnbHam type="button" id="gnbham">
-          <span></span>
-        </GnbHam>
+        <GnbHam />
       </GnbBox>
     </GnbWrapper>
   );
@@ -51,8 +48,18 @@ const GnbWrapper = styled.header`
   text-align: center;
   z-index: 100;
   transition: 1s;
-
 `;
+
+const Lined = styled.div`
+  position: absolute;
+  background: #1e1e1e;
+  border: 1px solid #02f194;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+`;
+
 const GnbBox = styled.div`
   position: absolute;
   display: flex;
@@ -66,7 +73,7 @@ const GnbBox = styled.div`
   padding: 1vw 6.25vw 0vw 6.25vw;
 `;
 const GnbLogo = styled.div`
-  & .logo {
+  >.gnblogolink {
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
@@ -74,40 +81,21 @@ const GnbLogo = styled.div`
     border: 1px solid #1e1e1e;
     padding: 7px 25px;
     position: relative;
-    animation: logo01 5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  }
-  & .lined {
-    opacity: 0;
-    animation: logo02 10s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  }
-  @keyframes logo01 {
-    0% {
-      border: 1px solid #1e1e1e;
-    }
-    50% {
+    transition: 0.5s;}
+  >.gnblogolink:hover {
       border: 1px solid #02f194;
+      color: #fff;
     }
-    100% {
-      border: 1px solid #1e1e1e;
-    }
-  }
-  @keyframes logo02 {
-    0% {
-      opacity: 0;
-    }
-    50% {
+  >.gnblogolink:hover .lined {
       opacity: 1;
-    }
-    100% {
-      opacity: 0;
     }
   }
 `;
 const GnbLink = styled.div`
   > a {
+    position: relative;
     margin: 0 15px;
     padding: 0.3em 0.8em 0.2em;
-    position: relative;
     display: inline-block;
     transition: 0.5s;
     color: #ccc;
@@ -118,44 +106,13 @@ const GnbLink = styled.div`
     border: 1px solid #02f194;
     color: #fff;
   }
-  > a:hover .lined {
+  > a:hover>.lined {
     opacity: 1;
   }
 `;
-const GnbHam = styled.button`
+const GnbHam = styled.div`
   width: 70px;
   outline: none;
   position: relative;
-  > span::before {
-    content: "";
-    display: block;
-    width: 70px;
-    margin: 10px 0px;
-    height: 1px;
-    background-color: #fff;
-  }
-  > span {
-    width: 70px;
-    position: absolute;
-    top: 0;
-    height: 1px;
-    display: block;
-    background-color: #fff;
-  }
-  > span::after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 1px;
-    background-color: #fff;
-  }
-`;
-const Lined = styled.div`
-  position: absolute;
-  background: #1e1e1e;
-  border: 1px solid #02f194;
-  width: 6px;
-  height: 6px;
   opacity: 0;
-  transition: all 0.2s ease-out;
 `;

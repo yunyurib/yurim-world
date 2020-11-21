@@ -67,7 +67,7 @@ export const designDetailData = [
     {
         href:"https://lush.co.kr/goods/goods_view.php?goodsNo=1000001327",
         title: "러쉬 : 스노우맨",
-        src:"https://lh3.googleusercontent.com/proxy/WqFw4I_4uOSnZLei1WzJeiPtPA89m2OoX-tgnsC6wjfXvI5RPY07au5B3qSq5leup10gZ4BSdtUlB9dLxa9Gdm-uxlZFYnwC1cAV1VSf1V56yy9ZaSM",
+        src:"data:image/jpeg;base64,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",
         text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
         button:"Explore"
     },
@@ -109,7 +109,7 @@ export const designDetailData = [
     {
         href:"https://lush.co.kr/goods/goods_view.php?goodsNo=174",
         title: "러쉬 : 인터갈릭틱",
-        src:"https://lh3.googleusercontent.com/proxy/5EjWsh4Scx-fN4bpoiHplpfLiEUuYv0KTbh0t3itwfWr_z34OAgCc6AAncde--mVe_s47fHi1ptE54FnVTl57pflNqcYcy6mJJn_wZMOeDDjtXHa4lE",
+        src:"https://lh3.googleusercontent.com/proxy/y2siIUIHZrNVZ5G183X0oWyjxUBepwgkkK-IQ3NL7ao1Z22lM60PpNgca55_IkyQ8ASKLok1H04-4RCpl2geFjO6oQmpjdwNj1AfahU6TGzM-UQvOnSDQyWm1euWuXSp6kNNYdxWj4ADGPaNhVCIgKt-aWkIN-WzL_-iIsVvD_oG11xasU2bxO57HDZNSbutj0I9wmKb163rd7WnVEoCF2ESmI5HPPHFggRZSQAnM3BQGuyBLFS6s1Gm_chO7hD3c9_pFLIr0lzd5nnuTYndqovNZGUMF1_v",
         text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
         button:"Explore"
     },
@@ -174,41 +174,118 @@ export const designDetailData = [
 
 export const designEventItem = [
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "1월의 혜택",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#기획 #디자인 #그래픽 #업로드",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999982",
+        title: "쵸피 : 5월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/201905/2019_5event_detail_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "1월의 혜택",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#기획 #디자인 #그래픽 #업로드",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999983",
+        title: "쵸피 : 4월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/201904/2019_4event_page_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "1월의 혜택",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#기획 #디자인 #그래픽 #업로드",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999985",
+        title: "쵸피 : 3월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/page/cp_3event_detail_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "1월의 혜택",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#기획 #디자인 #그래픽 #업로드",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999988",
+        title: "쵸피 : 2월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/board/2019_2event_page_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
-    }
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999990",
+        title: "쵸피 : 1월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/board/201901_1event_page_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.wvproject.co.kr/board/board.html?code=moonbanggu_board20&page=5&type=v&board_cate=&num1=999974&num2=00000&number=19&lock=N",
+        title: "WV : 4월의 혜택",
+        src:"http://efairplay.img2.kr/moonbanggu/07_site/event/201904/wv_4event_detail_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.wvproject.co.kr/board/board.html?code=moonbanggu_board20&page=5&type=v&board_cate=&num1=999977&num2=00000&number=16&lock=N",
+        title: "WV : 3월의 혜택",
+        src:"http://efairplay.img2.kr/moonbanggu/07_site/event/201903/wv_3event_detail_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.wvproject.co.kr/board/board.html?code=moonbanggu_board20&page=5&type=v&board_cate=&num1=999980&num2=00000&number=14&lock=N",
+        title: "WV : 2월의 혜택",
+        src:"http://efairplay.img2.kr/moonbanggu/07_site/event/20190131_wv_2event_detail_01.jpg",
+        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999991",
+        title: "쵸피 : 12월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/page/20181129_cp_12event_detail_01.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999993",
+        title: "쵸피 : 11월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/board/20181031_cp_11event_detail.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999994",
+        title: "쵸피 : 10월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/board/10_coupon_jj.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999995",
+        title: "쵸피 : 추석 이벤트",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/board/20180918_ch_9event_22_26_detai.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999996",
+        title: "쵸피 : 9월의 혜택",
+        src:"http://efairplay.img2.kr/CHOPIEE/event/board/20180903_ch_9event_detail_01.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999997",
+        title: "쵸피 : 오픈 이벤트",
+        src:"http://efairplay.img2.kr/CHOPIEE/Board/10%25coupon_jj.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
+    {
+        href:"https://www.wvproject.co.kr/board/board.html?code=moonbanggu_board20&page=6&type=v&board_cate=&num1=999985&num2=00000&number=10&lock=N",
+        title: "WV : 10월의 혜택",
+        src:"http://efairplay.img2.kr/moonbanggu/07_site/contents_banner/10EVENT_notice.jpg",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        button:"Explore"
+    },
 ];
 
 export const designBannerItem = [
     {
         href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "브랜드: 제멋",
+        title: "쵸피: 배너,광고,네이버,SNS",
         src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#배너디자인 #적용 #sns",
+        text:"#러블한디자인 #컬러풀한디자인 #배너디자인 #그래픽",
         button:"Explore"
     },
     {
@@ -224,5 +301,43 @@ export const designBannerItem = [
         src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
         text:"#배너디자인 #적용 #sns",
         button:"Explore"
+    }
+];
+export const designActivityItem = [
+    {
+        href:"https://xururuca9797.github.io/mashup/",
+        title: "Mashup Crew",
+        titletext:": 매시업크루",
+        src:"https://xururuca9797.github.io/mashup_site/images/project01_02.jpg",
+        text:"#기획자 #총괄 #디자인 #스타일리스트 #코디 #그래픽 #보정 #총무 #사이트 #SNS",
+        button:"Explore",
+        detailtext:"스트릿 스타일을 기반으로 다양한 분야에 사람들이 모여 하나의 새로운 작품을 완성하는 크루입니다.크루기획자로 활동하며, 시즌의 스토리와 기획, 촬영총괄, 스타일리스트, 그래픽 작업을 맡았습니다."
+    },
+    {
+        href:"https://xururuca9797.github.io/mashup/",
+        title: "Piecetogetherstation",
+        titletext:": 종합기지",
+        src:"https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/p960x960/97305588_245294266801432_4691837950781030400_o.jpg?_nc_cat=110&ccb=2&_nc_sid=2d5d41&_nc_ohc=c_Mg_UB5cSkAX_4R8h1&_nc_oc=AQkt88NfBmvUnVjMiuR6k7lDkbhyxkElyUYHqVCwbxfN3ONY4GSijxRYcbSECQ40vLY&_nc_ht=scontent-ssn1-1.xx&tp=6&oh=06562855ef813a3d990a2503ebe33689&oe=5FDEB871",
+        text:"#기획자 #총괄 #디자인 #스타일리스트 #코디 #그래픽 #보정 #총무 #사이트 #SNS",
+        button:"Explore",
+        detailtext:"종합기지(綜合基地)는 “조각들이 모여 하나의 기지를 이루다”라는 뜻으로, 악세사리 핸드메이드 브랜드.종합기지의 아이덴티티는  코발트 블루 색상의 우주공간 속 은빛가상의 공간을 만들어 기지요원들의 조각들이 모여서 종합기지라는 공간을 완성해 나가는  볼드하며 스트릿한 새로운 감성을 선보인다.대표로 활동하며, 촬영, SNS, WEB,디자인, 총무 등 전체적인 역할을 맡고있습니다."
+    },
+    {
+        href:"https://xururuca9797.github.io/mashup/",
+        title: "일러스트레이터",
+        titletext:": 개인일러스트작업",
+        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        text:"#일러스트",
+        button:"Explore",
+        detailtext:"無無無美: 無표정, 無속의 無의 美라는 주제로 일러스트 작업을 했습니다."
+    },
+    {
+        href:"https://xururuca9797.github.io/mashup/",
+        title: "개인SNS",
+        titletext:": 협찬",
+        src:"https://usercontents-c.styleshare.io/images/47610608/640x640",
+        text:"#일러스트",
+        button:"Explore",
+        detailtext:"저는 작년2019년 여름, LA에 여행을 가고 보는 시야가 커졌고, 자신의 대힌 자신감이 크게 늘었습니다.SNS의 영향력이 높아진 현재에 영향력을 줄 수 있는 사람이 되고싶었고,또 하나의 목표가 생겼습니다. 바로, 사람들에게 제품의 대한 정보를 주며,마케팅을 할 수 있도록 협찬을 받자! 라는 목표였습니다.2020년까지의 목표였지만, 2019년, 2개월만에 바로 목표를 달성하였답니다!"
     }
 ];

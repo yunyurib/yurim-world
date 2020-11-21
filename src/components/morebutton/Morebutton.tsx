@@ -8,8 +8,7 @@ export interface IMorebutton {
 export function Morebutton({ btnEvent }: IMorebutton) {
   return (
     <MorebuttonWrapper onClick={btnEvent}>
-      more
-      <Lined className="lined lined_dot_1"></Lined>
+      more<Lined className="lined lined_dot_1"></Lined>
       <Lined className="lined lined_dot_2"></Lined>
       <Lined className="lined lined_dot_3"></Lined>
       <Lined className="lined lined_dot_4"></Lined>

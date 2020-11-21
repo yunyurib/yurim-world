@@ -6,8 +6,7 @@ import {
   Gnb,
   About,
   Develop,
-  Design,
-  Contact,
+  Design
 } from "./Index";
 
 export default {
@@ -27,4 +26,3 @@ export const HomePage = () => <Home />;
 export const AboutPage = () => <About />;
 export const DevelopPage = () => <Develop />;
 export const DesignPage = () => <Design />;
-export const ContactPage = () => <Contact />;
