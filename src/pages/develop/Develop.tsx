@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { DevelopWorkData, DevelopWebData } from "./Develop.data";
+import { DevelopWorkData, DevelopWebData, DevelopAnimationData } from "./Develop.data";
 import { Morebutton } from "../../components/morebutton/Morebutton";
 
 export function Develop() {
@@ -8,6 +8,12 @@ export function Develop() {
   const developWebItemLineCountEvent = () => {
     const count = developWebItemlLine + 1;
     setdevelopWebItemlLine(count);
+  };
+
+  const [developAnimationItemlLine, setdevelopAnimationItemlLine] = useState<number>(1);
+  const developAnimationItemLineCountEvent = () => {
+    const count = developAnimationItemlLine + 1;
+    setdevelopAnimationItemlLine(count);
   };
 
   const scrollTop = () => {
@@ -55,8 +61,8 @@ export function Develop() {
             </div>
             <div className="DevelopWebItem__text">
               <span className="DevelopWebItem__text__title">컬러</span>
-              <span className={data.color}></span>
-              <span className={data.color}></span>
+              <span className={data.color1}></span>
+              <span className={data.color2}></span>
             </div>
             <div className="DevelopWebItem__text">
               <span className="DevelopWebItem__text__title">기획의도</span>
@@ -64,23 +70,35 @@ export function Develop() {
             </div>
             <a
               className="liButton"
-              href={data.renewalhref}
+              href={data.href}
               target="blank"
               title={data.title}
             >
               Renewal<span>&rarr;</span>
             </a>
-            <a
-              className="liButton"
-              href={data.originalhref}
-              target="blank"
-              title={data.title}
-            >
-              Original<span>&rarr;</span>
-            </a>
           </div>
-          <ScrollTopButton type="button" onClick={scrollTop}>Top</ScrollTopButton>
-        </DevelopWebItem>
+        </DevelopWebItem >
+      );
+    });
+
+  const createDevelopAnimationItem = DevelopAnimationData
+    .filter((data, index) => index <= developAnimationItemlLine * 4 - 1)
+    .map((data, index) => {
+      return (
+        <li className="liSmall">
+          <a href={data.href} target="blank">
+            <div className="liImg">
+              <img src={data.src} alt={data.title}></img>
+            </div>
+            <p className="title">
+              {data.title}
+            </p>
+            <p>{data.text}</p>
+            <div className="liButton">
+              Explore<span>&rarr;</span>
+            </div>
+          </a>
+        </li>
       );
     });
   return (
@@ -105,6 +123,14 @@ export function Develop() {
           <Morebutton btnEvent={developWebItemLineCountEvent} />
         </DevelopWebLisr>
       </DevelopBox>
+      <DevelopBox>
+        <h3>Individual activity</h3>
+        <p>CSS 애니메이션</p>
+        <DevelopWorkLisr className="DevelopAnimationLisr">{createDevelopAnimationItem}
+          <Morebutton btnEvent={developAnimationItemLineCountEvent} />
+        </DevelopWorkLisr>
+      </DevelopBox>
+      <ScrollTopButton type="button" onClick={scrollTop}>Top</ScrollTopButton>
     </DevelopWrapper>
   );
 }
@@ -120,15 +146,12 @@ const DevelopWrapper = styled.main`
     padding: 2vw 6.25vw 0vw 6.25vw;
   }
 `;
-
 const DevelopGrid = styled.div`
   top: 0;
   left: 50%;
-  margin: 0 auto;
+  position: fixed;
   width: 1px;
-  position: absolute;
-  display: inline;
-  height: 5300px;
+  height: 100%;
   background: hsla(0, 0%, 100%, 0.1);
 `;
 const DevelopBox = styled.section`
@@ -207,6 +230,9 @@ const DevelopWorkLisr = styled.ul`
     overflow: hidden;
     object-fit: cover;
   }
+  &.DevelopAnimationLisr .liImg {
+    height: 23em !important;
+  }
   > .liSmall > a > .title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -264,12 +290,12 @@ const DevelopWebItem = styled.li`
   > .DevelopWebCloneleft {
     overflow: hidden;
     border-radius: 0.4rem;
-    width: 35%;
+    width: 40%;
+    height: 43em;
     background-color: white;
   }
   > .DevelopWebCloneleft > img {
     width: 100%;
-    padding: 2vw;
     box-sizing: border-box;
   }
   > .DevelopWebCloneright {
@@ -308,8 +334,11 @@ const DevelopWebItem = styled.li`
     margin-left: 10px;
     display: inline-block;
   }
-  & .dd {
-    background-color: red;
+  & .purple {
+    background-color: #D39CDD;
+  }
+  & .yellow {
+    background-color: #F7F8B0;
   }
   & .liButton {
     display: inline-block;
