@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { DevelopWorkData, DevelopWebData, DevelopAnimationData } from "./Develop.data";
+import {
+  DevelopWorkData,
+  DevelopWebData,
+  DevelopAnimationData,
+} from "./Develop.data";
 import { Morebutton } from "../../components/morebutton/Morebutton";
 
 export function Develop() {
@@ -10,7 +14,9 @@ export function Develop() {
     setdevelopWebItemlLine(count);
   };
 
-  const [developAnimationItemlLine, setdevelopAnimationItemlLine] = useState<number>(1);
+  const [developAnimationItemlLine, setdevelopAnimationItemlLine] = useState<
+    number
+  >(1);
   const developAnimationItemLineCountEvent = () => {
     const count = developAnimationItemlLine + 1;
     setdevelopAnimationItemlLine(count);
@@ -22,7 +28,7 @@ export function Develop() {
       left: 0,
       top: 0,
     });
-  }
+  };
   const createDevelopWorkItem = DevelopWorkData.map((data, index) => {
     return (
       <li className="liSmall">
@@ -41,66 +47,46 @@ export function Develop() {
       </li>
     );
   });
-  const createDevelopWebItem = DevelopWebData
-    .filter((data, index) => index <= developWebItemlLine * 1 - 1)
-    .map((data, index) => {
-      return (
-        <DevelopWebItem>
-          <div className="DevelopWebCloneleft">
+  const createDevelopWebItem = DevelopWebData.filter(
+    (data, index) => index <= developWebItemlLine * 3 - 1
+  ).map((data, index) => {
+    return (
+      <li className="liSmall liLg">
+        <a href={data.href} target="blank" className="liLink">
+          <p className="liDetailText">{data.project}</p>
+          <div className="liLgliImg">
             <img src={data.src} alt={data.title}></img>
           </div>
-          <div className="DevelopWebCloneright">
-            <h4>{data.title}</h4>
-            <div className="DevelopWebItem__text">
-              <span className="DevelopWebItem__text__title">제작기간</span>
-              <p>{data.period}</p>
-            </div>
-            <div className="DevelopWebItem__text">
-              <span className="DevelopWebItem__text__title">키워드</span>
-              <p>{data.hashtags}</p>
-            </div>
-            <div className="DevelopWebItem__text">
-              <span className="DevelopWebItem__text__title">컬러</span>
-              <span className={data.color1}></span>
-              <span className={data.color2}></span>
-            </div>
-            <div className="DevelopWebItem__text">
-              <span className="DevelopWebItem__text__title">기획의도</span>
-              <p>{data.project}</p>
-            </div>
-            <a
-              className="liButton"
-              href={data.href}
-              target="blank"
-              title={data.title}
-            >
-              Renewal<span>&rarr;</span>
-            </a>
+          <p>
+            <span className="liLgTitle">{data.title}</span>
+            {data.hashtags}
+          </p>
+          <div className="liButton">
+            Explore<span>&rarr;</span>
           </div>
-        </DevelopWebItem >
-      );
-    });
+        </a>
+      </li>
+    );
+  });
 
-  const createDevelopAnimationItem = DevelopAnimationData
-    .filter((data, index) => index <= developAnimationItemlLine * 4 - 1)
-    .map((data, index) => {
-      return (
-        <li className="liSmall">
-          <a href={data.href} target="blank">
-            <div className="liImg">
-              <img src={data.src} alt={data.title}></img>
-            </div>
-            <p className="title">
-              {data.title}
-            </p>
-            <p>{data.text}</p>
-            <div className="liButton">
-              Explore<span>&rarr;</span>
-            </div>
-          </a>
-        </li>
-      );
-    });
+  const createDevelopAnimationItem = DevelopAnimationData.filter(
+    (data, index) => index <= developAnimationItemlLine * 4 - 1
+  ).map((data, index) => {
+    return (
+      <li className="liSmall">
+        <a href={data.href} target="blank">
+          <div className="liImg">
+            <img src={data.src} alt={data.title}></img>
+          </div>
+          <p className="title">{data.title}</p>
+          <p>{data.text}</p>
+          <div className="liButton">
+            Explore<span>&rarr;</span>
+          </div>
+        </a>
+      </li>
+    );
+  });
   return (
     <DevelopWrapper>
       <DevelopGrid />
@@ -119,18 +105,22 @@ export function Develop() {
       <DevelopBox>
         <h3>Web</h3>
         <p>리뉴얼 등등</p>
-        <DevelopWebLisr>{createDevelopWebItem}
+        <DevelopWorkLisr>
+          {createDevelopWebItem}
           <Morebutton btnEvent={developWebItemLineCountEvent} />
-        </DevelopWebLisr>
+        </DevelopWorkLisr>
       </DevelopBox>
       <DevelopBox>
         <h3>Individual activity</h3>
         <p>CSS 애니메이션</p>
-        <DevelopWorkLisr className="DevelopAnimationLisr">{createDevelopAnimationItem}
+        <DevelopWorkLisr className="DevelopAnimationLisr">
+          {createDevelopAnimationItem}
           <Morebutton btnEvent={developAnimationItemLineCountEvent} />
         </DevelopWorkLisr>
       </DevelopBox>
-      <ScrollTopButton type="button" onClick={scrollTop}>Top</ScrollTopButton>
+      <ScrollTopButton type="button" onClick={scrollTop}>
+        Top
+      </ScrollTopButton>
     </DevelopWrapper>
   );
 }
@@ -213,6 +203,7 @@ const DevelopWorkLisr = styled.ul`
     transition: 0.5s;
     margin-top: 50px;
   }
+
   > .liSmall:hover {
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 4);
     transform: translateY(-5px);
@@ -275,6 +266,43 @@ const DevelopWorkLisr = styled.ul`
     transform: translateY(2px);
     transition: 0.5s;
   }
+  // liLg
+  > .liLg {
+    width: 32% !important;
+  }
+  > .liLg .liLgTitle {
+    text-transform: uppercase;
+    font-size: 4em;
+    height: 1.2em;
+    display: block;
+    font-family: "Squada One", cursive;
+  }
+  & .liDetailText {
+    display: none;
+    height: 353px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  & .liLg:hover .liDetailText {
+    display: block;
+    padding: 25px 25px 0px 25px;
+  }
+  & .liLg:hover .liLgliImg,
+  & .liLg:hover span,
+  & .liLg:hover p {
+    display: none;
+  }
+  & .liLgliImg {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  & .liLgliImg > img {
+    filter: none !important;
+    -webkit-filter: grayscale(0%) !important;
+  }
 `;
 
 const DevelopWebLisr = styled.ul``;
@@ -306,7 +334,7 @@ const DevelopWebItem = styled.li`
     height: 55px;
     text-transform: uppercase;
     font-size: 9em;
-    font-family: "Squada One",cursive;
+    font-family: "Squada One", cursive;
     -webkit-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
     transform: translateY(-90px);
@@ -335,10 +363,10 @@ const DevelopWebItem = styled.li`
     display: inline-block;
   }
   & .purple {
-    background-color: #D39CDD;
+    background-color: #d39cdd;
   }
   & .yellow {
-    background-color: #F7F8B0;
+    background-color: #f7f8b0;
   }
   & .liButton {
     display: inline-block;
@@ -357,17 +385,17 @@ const DevelopWebItem = styled.li`
 `;
 
 const ScrollTopButton = styled.button`
-width: 50px;
-position: fixed;
-right: 10px;
-height: 50px;
-background-color: #1d1d1d;
-border-radius: 50%;
-text-align: center;
-bottom: 10px;
-font-weight: bold;
-color: #02f093;
-border: 1px solid #02f093;
-z-index: 999999;
-outline: none;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  height: 50px;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  text-align: center;
+  bottom: 10px;
+  font-weight: bold;
+  color: #02f093;
+  border: 1px solid #02f093;
+  z-index: 999999;
+  outline: none;
 `;
