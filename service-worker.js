@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/yurim-world/precache-manifest.934698cddc225ed301f75cda9230f139.js"
+  "/yurim-world/precache-manifest.ea9c0befd6e7924ceaf60c0073357cbf.js"
 );
 
 self.addEventListener('message', (event) => {

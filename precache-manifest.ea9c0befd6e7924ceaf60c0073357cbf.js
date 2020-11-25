@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20436e241a0719bd6a95c94b5d5c849e",
+    "revision": "12db717a0cd29f86f7f90744ee530b72",
     "url": "/yurim-world/index.html"
   },
   {
-    "revision": "fc09502d4764edf75ec3",
+    "revision": "2dad6c6c90d42b1f00ee",
     "url": "/yurim-world/static/css/main.41b4133e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yurim-world/static/js/2.f8fa681b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fc09502d4764edf75ec3",
-    "url": "/yurim-world/static/js/main.ada7c005.chunk.js"
+    "revision": "2dad6c6c90d42b1f00ee",
+    "url": "/yurim-world/static/js/main.fc79e880.chunk.js"
   },
   {
     "revision": "62d2e64640519209342e",
