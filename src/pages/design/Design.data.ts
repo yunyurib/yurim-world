@@ -282,23 +282,23 @@ export const designEventItem = [
 
 export const designBannerItem = [
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "쵸피: 배너,광고,네이버,SNS",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#러블한디자인 #컬러풀한디자인 #배너디자인 #그래픽",
+        href:"http://yurimxu.dothome.co.kr/web/banner/cp_banner.html",
+        title: "Chopiee",
+        src:"http://yurimxu.dothome.co.kr/web/banner/image/cpbanner21.jpg",
+        text:"#러블한디자인 #컬러풀한디자인 #일러스트 #파스텔",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
-        title: "브랜드: 더블유브이",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#배너디자인 #적용 #sns",
+        href:"http://yurimxu.dothome.co.kr/web/banner/wv_banner.html",
+        title: "WVproject",
+        src:"http://efairplay.img2.kr/moonbanggu/03_WV/2018SS/MJLP7167/MJLP7167_01_white.jpg",
+        text:"#배너디자인 #컨셉 #룩북",
         button:"Explore"
     },
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
+        href:"http://yurimxu.dothome.co.kr/web/banner/fpjm_banner.html",
         title: "브랜드: 페플",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010166542.jpg?1601350015",
         text:"#배너디자인 #적용 #sns",
         button:"Explore"
     }

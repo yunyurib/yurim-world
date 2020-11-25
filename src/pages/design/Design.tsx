@@ -4,11 +4,10 @@ import styled from "styled-components";
 import {
   designDetailData,
   designEventItem,
-  designBannerItem, designActivityItem
+  designBannerItem,
+  designActivityItem,
 } from "./Design.data";
 import { Morebutton } from "../../components/morebutton/Morebutton";
-
-
 
 export function Design() {
   const [designDetailLine, setDesignDetailLine] = useState<number>(1);
@@ -21,11 +20,6 @@ export function Design() {
     const count = designEventlLine + 1;
     setDesignEventlLine(count);
   };
-  const [designBannerlLine, setDesignBannerlLine] = useState<number>(1);
-  const designDetailItemLineBannerEvent = () => {
-    const count = designBannerlLine + 1;
-    setDesignBannerlLine(count);
-  };
 
   const scrollTop = () => {
     window.scroll({
@@ -33,7 +27,7 @@ export function Design() {
       left: 0,
       top: 0,
     });
-  }
+  };
 
   const createDesignDetailItem = designDetailData
     .filter((data, index) => index <= designDetailLine * 4 - 1)
@@ -73,25 +67,23 @@ export function Design() {
         </li>
       );
     });
-  const createDesignBannerItem = designBannerItem
-    .filter((data, index) => index <= designBannerlLine * 4 - 1)
-    .map((data, index) => {
-      return (
-        <li className="liSmall liM">
-          <a href={data.href} target="blank" className="liLink">
-            <div className="liImg">
-              <img src={data.src} alt={data.title}></img>
-            </div>
-            <span>{data.title}</span>
-            <p>{data.text}</p>
-            <div className="liButton">
-              {data.button}
-              <span>&rarr;</span>
-            </div>
-          </a>
-        </li>
-      );
-    });
+  const createDesignBannerItem = designBannerItem.map((data, index) => {
+    return (
+      <li className="liSmall liM">
+        <a href={data.href} target="blank" className="liLink">
+          <div className="liImg">
+            <img src={data.src} alt={data.title}></img>
+          </div>
+          <span>{data.title}</span>
+          <p>{data.text}</p>
+          <div className="liButton">
+            {data.button}
+            <span>&rarr;</span>
+          </div>
+        </a>
+      </li>
+    );
+  });
   const createDesignActivityItem = designActivityItem.map((data, index) => {
     return (
       <li className="liSmall liActivity">
@@ -131,7 +123,6 @@ export function Design() {
           <h3>Banner</h3>
           <p>브랜드별 배너, SNS, 네이버광고</p>
           <DesignContList>{createDesignBannerItem}</DesignContList>
-          <Morebutton btnEvent={designDetailItemLineBannerEvent} />
         </DesignContClone>
         <DesignContClone>
           <h3>Individual activity</h3>
@@ -140,10 +131,12 @@ export function Design() {
           {/* more */}
         </DesignContClone>
       </DesignCont>
-      <ScrollTopButton type="button" onClick={scrollTop}>Top</ScrollTopButton>
+      <ScrollTopButton type="button" onClick={scrollTop}>
+        Top
+      </ScrollTopButton>
     </DesignWrapper>
   );
-};
+}
 
 const DesignWrapper = styled.div`
   width: 100%;
@@ -189,7 +182,7 @@ const DesignContList = styled.ul`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   > .liM {
     width: 31.5% !important;
   }
@@ -208,13 +201,13 @@ const DesignContList = styled.ul`
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 4);
     transform: translateY(-5px);
   }
-  > .liSmall >.liLink:hover > .liButton > span {
+  > .liSmall > .liLink:hover > .liButton > span {
     transform: translateY(2px) translateX(10px);
   }
-  > .liSmall >.liLink {
+  > .liSmall > .liLink {
     display: block;
   }
-  > .liSmall >.liLink > .liImg {
+  > .liSmall > .liLink > .liImg {
     display: block;
     width: 100%;
     height: 14rem;
@@ -222,13 +215,13 @@ const DesignContList = styled.ul`
     object-fit: cover;
   }
 
-  > .liSmall >.liLink > span {
+  > .liSmall > .liLink > span {
     font-size: 1.5rem;
     font-weight: bold;
     display: block;
     padding: 15px 25px 0px;
   }
-  > .liSmall >.liLink > p {
+  > .liSmall > .liLink > p {
     font-size: 1rem;
     padding: 0px 25px 15px 25px;
   }
@@ -236,12 +229,12 @@ const DesignContList = styled.ul`
     filter: none !important;
     -webkit-filter: grayscale(0%) !important;
   }
-  > .liSmall >.liLink img {
+  > .liSmall > .liLink img {
     width: 100%;
     filter: gray;
     -webkit-filter: grayscale(100%);
   }
-  > .liSmall >.liLink > .liButton {
+  > .liSmall > .liLink > .liButton {
     display: block;
     padding: 1rem;
     font-size: 1rem;
@@ -256,24 +249,26 @@ const DesignContList = styled.ul`
     transition: 0.2s;
     cursor: pointer;
   }
-  > .liSmall >.liLink > .liButton > span {
+  > .liSmall > .liLink > .liButton > span {
     display: inline-block;
     padding-left: 10px;
     transform: translateY(2px);
     transition: 0.5s;
   }
   // liActivity
-  & .liDetailText{
+  & .liDetailText {
     display: none;
     height: 300px;
     box-sizing: border-box;
     text-align: justify;
   }
-  & .liActivity:hover .liDetailText{
-    display:block;
+  & .liActivity:hover .liDetailText {
+    display: block;
     padding: 25px 25px 0px 25px;
   }
-  & .liActivity:hover .liActivityliImg,& .liActivity:hover span,& .liActivity:hover p{
+  & .liActivity:hover .liActivityliImg,
+  & .liActivity:hover span,
+  & .liActivity:hover p {
     display: none;
   }
   & .liActivityliImg {
@@ -283,22 +278,23 @@ const DesignContList = styled.ul`
     overflow: hidden;
     object-fit: cover;
   }
-  & .liActivityliImg>img{
+  & .liActivityliImg > img {
     filter: none !important;
-    -webkit-filter: grayscale(0%)  !important; }
+    -webkit-filter: grayscale(0%) !important;
+  }
 `;
 const ScrollTopButton = styled.button`
-width: 50px;
-position: fixed;
-right: 10px;
-height: 50px;
-background-color: #1d1d1d;
-border-radius: 50%;
-text-align: center;
-bottom: 10px;
-font-weight: bold;
-color: #02f093;
-border: 1px solid #02f093;
-z-index: 999999;
-outline: none;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  height: 50px;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  text-align: center;
+  bottom: 10px;
+  font-weight: bold;
+  color: #02f093;
+  border: 1px solid #02f093;
+  z-index: 999999;
+  outline: none;
 `;
