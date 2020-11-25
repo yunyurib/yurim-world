@@ -29,22 +29,24 @@ export function Home() {
         <HomeVisualNav>
           <ul>
             <li className="mousemovi">
-              <Link to="/about">
-                About
+              <Link to="/yurim-world/about">About</Link>
+            </li>
+            <li>
+              <Link to="/yurim-world/develop" className="mousemovi">
+                Develop
               </Link>
             </li>
             <li>
-              <Link to="/develop" className="mousemovi">Develop</Link>
-            </li>
-            <li>
-              <Link to="/design" className="mousemovi">Design</Link>
+              <Link to="/yurim-world/design" className="mousemovi">
+                Design
+              </Link>
             </li>
           </ul>
         </HomeVisualNav>
       </HomeVisual>
     </HomeWrapper>
   );
-};
+}
 
 const HomeWrapper = styled.main`
   position: relative;
@@ -107,17 +109,17 @@ const HomeVisualNav = styled.nav`
   position: absolute;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Squada One', cursive;
+  font-family: "Squada One", cursive;
   text-align: center;
   transition: 1s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   > ul > li {
     transition: 3s;
-    transition-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   > ul > li > a {
     transition: 1s;
-    transition-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   > ul > li:hover a {
     color: #fff;

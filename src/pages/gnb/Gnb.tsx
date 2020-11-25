@@ -7,7 +7,7 @@ export function Gnb() {
     <GnbWrapper>
       <GnbBox>
         <GnbLogo>
-          <Link to="/" className="gnblogolink">
+          <Link to="/yurim-world/" className="gnblogolink">
             YR
             <Lined className="lined lined_dot_1"></Lined>
             <Lined className="lined lined_dot_2"></Lined>
@@ -41,7 +41,7 @@ export function Gnb() {
       </GnbBox>
     </GnbWrapper>
   );
-};
+}
 const GnbWrapper = styled.header`
   position: absolute;
   width: 100%;
@@ -106,7 +106,7 @@ const GnbLink = styled.div`
     border: 1px solid #02f194;
     color: #fff;
   }
-  > a:hover>.lined {
+  > a:hover > .lined {
     opacity: 1;
   }
 `;
