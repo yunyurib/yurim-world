@@ -6,9 +6,9 @@ export const Routes = () => {
   return (
     <RoutesWrapper>
       <Route exact path="/yurim-world/" component={Home} />
-      <Route exact path="/yurim-world/about" component={About} />
-      <Route exact path="/yurim-world/develop" component={Develop} />
-      <Route exact path="/yurim-world/design" component={Design} />
+      <Route path="/yurim-world/about/" component={About} />
+      <Route path="/yurim-world/develop/" component={Develop} />
+      <Route path="/yurim-world/design/" component={Design} />
     </RoutesWrapper>
   );
 };
