@@ -48,7 +48,7 @@ export function Develop() {
     );
   });
   const createDevelopWebItem = DevelopWebData.filter(
-    (data, index) => index <= developWebItemlLine * 3 - 1
+    (data, index) => index <= developWebItemlLine * 6 - 1
   ).map((data, index) => {
     return (
       <li className="liSmall liLg">
@@ -97,14 +97,14 @@ export function Develop() {
         <p>
           FMJ 근무 시, 4의사이트를 단독 관리를 하였습니다.
           <br />
-          chopiee사이트는 백지상태부터 로고, 런칭 후관리까지 단독총괄로
+          chopiee사이트는 백지 상태부터 로고, 캐릭터, 런칭 후관리까지 단독총괄로
           작업하였습니다.
         </p>
         <DevelopWorkLisr>{createDevelopWorkItem}</DevelopWorkLisr>
       </DevelopBox>
       <DevelopBox>
         <h3>Web</h3>
-        <p>리뉴얼 등등</p>
+        <p>리뉴얼, 웹구현 등</p>
         <DevelopWorkLisr>
           {createDevelopWebItem}
           <Morebutton btnEvent={developWebItemLineCountEvent} />
@@ -302,85 +302,6 @@ const DevelopWorkLisr = styled.ul`
   & .liLgliImg > img {
     filter: none !important;
     -webkit-filter: grayscale(0%) !important;
-  }
-`;
-
-const DevelopWebLisr = styled.ul``;
-const DevelopWebItem = styled.li`
-  width: 100%;
-  display: flex;
-  color: #bbb;
-  margin-bottom: 50px;
-  > div {
-    width: 50%;
-    margin-top: 2.25vw;
-  }
-  > .DevelopWebCloneleft {
-    overflow: hidden;
-    border-radius: 0.4rem;
-    width: 40%;
-    height: 43em;
-    background-color: white;
-  }
-  > .DevelopWebCloneleft > img {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  > .DevelopWebCloneright {
-    padding: 2vw 4vw;
-    background-color: #1e1e1e;
-  }
-  > .DevelopWebCloneright > h4 {
-    height: 55px;
-    text-transform: uppercase;
-    font-size: 9em;
-    font-family: "Squada One", cursive;
-    -webkit-transform: translateY(-50px);
-    -ms-transform: translateY(-50px);
-    transform: translateY(-90px);
-  }
-  & .DevelopWebItem__text {
-    padding: 10px 0px;
-  }
-  & .DevelopWebItem__text > p {
-    color: #e1e1e1;
-    font-size: 1rem;
-    font-weight: lighter;
-    text-align: justify;
-  }
-  & .DevelopWebItem__text__title {
-    font-size: 1.2rem;
-    line-height: 40px;
-    transform: translateY(-3px);
-    display: inline-block;
-    font-weight: bold;
-    color: #676767;
-  }
-  & .color {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    display: inline-block;
-  }
-  & .purple {
-    background-color: #d39cdd;
-  }
-  & .yellow {
-    background-color: #f7f8b0;
-  }
-  & .liButton {
-    display: inline-block;
-    padding: 1rem 6em;
-    font-size: 1rem;
-    text-align: center;
-    margin: 30px 5px;
-    color: #02f194;
-    background-color: #1e1e1e;
-    border: none;
-    border: 1px solid #02f194;
-    border-radius: 0.4rem;
-    transition: 0.2s;
-    cursor: pointer;
   }
 `;
 

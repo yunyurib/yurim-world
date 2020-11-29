@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { aboutDataFrontend, aboutDataLibrary, aboutDataBackend, aboutDataSoftware } from "./About.data";
+import {
+  aboutDataFrontend,
+  aboutDataLibrary,
+  aboutDataBackend,
+  aboutDataSoftware,
+} from "./About.data";
 import profile from "../../assets/image/aboutcontleft_profile.jpg";
 
 export function About() {
@@ -84,7 +89,9 @@ export function About() {
             </p>
             <p>
               Or, why don’t you email me?
-              <span>xruruca-@naver.com</span>
+              <br />
+              최대 3일 이내에 답변을 드리겠습니다.
+              <span>zeze-@naver.com</span>
             </p>
           </AboutContLeftInfo>
         </AboutContClone>
@@ -110,9 +117,7 @@ export function About() {
             <p># Back-end</p>
           </AboutContLeftSkillTitle>
           <AboutContLeftSkillText>
-            <ul className="skillBox">
-              {createAboutContLeftSkillBackend}
-            </ul>
+            <ul className="skillBox">{createAboutContLeftSkillBackend}</ul>
           </AboutContLeftSkillText>
         </AboutContClone>
         <AboutContClone className="skillBox4">
@@ -161,7 +166,7 @@ export function About() {
                 </div>
               </li>
               <li>
-                <span className="HistoryDate">2019.11~2019.12</span>
+                <span className="HistoryDate">2019.10~2019.11</span>
                 <p className="HistoryTitle">LF몰 닥스키즈 사무, 디자인 보조</p>
                 <div>
                   <p>
@@ -178,13 +183,25 @@ export function About() {
                   </p>
                 </div>
               </li>
+              <li>
+                <span className="HistoryDate">2019.12~2019.12</span>
+                <p className="HistoryTitle">
+                  작당모의 업무보조<span>잼페이스 어플리케이션 엄무보조</span>
+                </p>
+                <div>
+                  <p>- 서비스의 데이터 수</p>
+                  <p>- 영상서비스 정보 입력</p>
+                </div>
+              </li>
             </ul>
           </AboutContLeftSkillTitle>
           <AboutContLeftSkillText>
             <ul className="HistoryBox skillBox6">
               <li>
-                <span className="HistoryDate">2019.10~2019.11</span>
-                <p className="HistoryTitle">러쉬 코리아 웹디자인</p>
+                <span className="HistoryDate">2019.09~2019.10</span>
+                <p className="HistoryTitle">
+                  러쉬 코리아 웹디자인<span>UI/UX팀</span>
+                </p>
                 <div>
                   <p>
                     - 모든 작업을 템플릿 가이드 기반에 맞춰 제작하여, 조직의
@@ -228,7 +245,7 @@ export function About() {
       </AboutCont>
     </AboutWrapper>
   );
-};
+}
 
 const AboutWrapper = styled.main`
   width: 100%;
@@ -421,7 +438,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__js > .skillBar::before {
     background-color: #ffc600;
-    width: 80%;
+    width: 70%;
   }
   .Skill__htcs > .SkillTextTitle {
     color: #0086f2;
@@ -439,7 +456,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__react > .skillBar::before {
     background-color: #61dafb;
-    width: 30%;
+    width: 40%;
   }
   .Skill__reactn > .skillBar::before {
     width: 5%;
@@ -472,7 +489,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__sc > .skillBar::before {
     background-color: #ff4785;
-    width: 40%;
+    width: 80%;
   }
   .Skill__sc > .SkillTextIcon {
     background-position: 0px -64px !important;
@@ -482,7 +499,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__sass > .skillBar::before {
     background-color: #cb6f92;
-    width: 40%;
+    width: 50%;
   }
   .Skill__sass > .SkillTextIcon {
     background-position: -126px -96px !important;
@@ -503,7 +520,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__ts > .skillBar::before {
     background-color: #007acc;
-    width: 10%;
+    width: 30%;
   }
   .Skill__ts > .SkillTextIcon {
     background-position: -96px -32px !important;
@@ -513,7 +530,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__bs > .skillBar::before {
     background-color: #5b4282;
-    width: 10%;
+    width: 50%;
   }
   .Skill__bs > .SkillTextIcon {
     background-position: -95px -127px !important;
@@ -523,7 +540,7 @@ const AboutContLeftSkillText = styled.div`
   }
   .Skill__node > .skillBar::before {
     background-color: #73aa63;
-    width: 5%;
+    width: 60%;
   }
   .Skill__node > .SkillTextIcon {
     background-position: -32px -32px !important;

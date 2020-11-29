@@ -1,3 +1,4 @@
+import cpbanner from "../../assets/image/cpbanner21.jpg";
 export const designDetailData = [
     // wv
     {
@@ -109,7 +110,7 @@ export const designDetailData = [
     {
         href:"https://lush.co.kr/goods/goods_view.php?goodsNo=174",
         title: "러쉬 : 인터갈릭틱",
-        src:"https://lh3.googleusercontent.com/proxy/y2siIUIHZrNVZ5G183X0oWyjxUBepwgkkK-IQ3NL7ao1Z22lM60PpNgca55_IkyQ8ASKLok1H04-4RCpl2geFjO6oQmpjdwNj1AfahU6TGzM-UQvOnSDQyWm1euWuXSp6kNNYdxWj4ADGPaNhVCIgKt-aWkIN-WzL_-iIsVvD_oG11xasU2bxO57HDZNSbutj0I9wmKb163rd7WnVEoCF2ESmI5HPPHFggRZSQAnM3BQGuyBLFS6s1Gm_chO7hD3c9_pFLIr0lzd5nnuTYndqovNZGUMF1_v",
+        src:"data:image/jpeg;base64,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",
         text:"#가이드에 맞춘 #상세페이지 #썸네일 #누끼 #모바일 #웹",
         button:"Explore"
     },
@@ -171,41 +172,40 @@ export const designDetailData = [
         button:"Explore"
     }
 ];
-
 export const designEventItem = [
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999982",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999982&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "쵸피 : 5월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/201905/2019_5event_detail_01.jpg",
-        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML",
+        text:"#2019 #캐릭터디자인 #기획 #디자인 #제목 #그래픽 #업로드 #HTML",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999983",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999983&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "쵸피 : 4월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/201904/2019_4event_page_01.jpg",
         text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999985",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999985&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "쵸피 : 3월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/page/cp_3event_detail_01.jpg",
         text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999988",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999988&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "쵸피 : 2월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/board/2019_2event_page_01.jpg",
         text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999990",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999990&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "쵸피 : 1월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/board/201901_1event_page_01.jpg",
-        text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
+        text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
@@ -223,21 +223,21 @@ export const designEventItem = [
         button:"Explore"
     },
     {
-        href:"https://www.wvproject.co.kr/board/board.html?code=moonbanggu_board20&page=5&type=v&board_cate=&num1=999980&num2=00000&number=14&lock=N",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999988&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "WV : 2월의 혜택",
         src:"http://efairplay.img2.kr/moonbanggu/07_site/event/20190131_wv_2event_detail_01.jpg",
         text:"#2019 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999991",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&page=2&type=v&board_cate=&num1=999991&num2=00000&number=8&lock=N",
         title: "쵸피 : 12월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/page/20181129_cp_12event_detail_01.jpg",
         text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999993",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&page=2&type=v&board_cate=&num1=999993&num2=00000&number=7&lock=N",
         title: "쵸피 : 11월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/board/20181031_cp_11event_detail.jpg",
         text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
@@ -251,21 +251,21 @@ export const designEventItem = [
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999995",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&page=2&type=v&board_cate=&num1=999995&num2=00000&number=5&lock=N",
         title: "쵸피 : 추석 이벤트",
         src:"http://efairplay.img2.kr/CHOPIEE/event/board/20180918_ch_9event_22_26_detai.jpg",
         text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999996",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999996&num2=00000&type=v&&s_id=&stext=&ssubject=&shname=&scontent=&sbrand=&sgid=&datekey=&branduid=&lock=N",
         title: "쵸피 : 9월의 혜택",
         src:"http://efairplay.img2.kr/CHOPIEE/event/board/20180903_ch_9event_detail_01.jpg",
         text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
         button:"Explore"
     },
     {
-        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&board_cate=&num1=999997",
+        href:"https://www.chopiee.com/board/board.html?code=chopiee_image2&page=2&type=v&board_cate=&num1=999997&num2=00000&number=3&lock=N",
         title: "쵸피 : 오픈 이벤트",
         src:"http://efairplay.img2.kr/CHOPIEE/Board/10%25coupon_jj.jpg",
         text:"#2018 #기획 #디자인 #제목 #그래픽 #업로드 #HTML #모바일 #PC #광고",
@@ -279,12 +279,11 @@ export const designEventItem = [
         button:"Explore"
     },
 ];
-
 export const designBannerItem = [
     {
         href:"http://yurimxu.dothome.co.kr/web/banner/cp_banner.html",
         title: "Chopiee",
-        src:"http://yurimxu.dothome.co.kr/web/banner/image/cpbanner21.jpg",
+        src:cpbanner,
         text:"#러블한디자인 #컬러풀한디자인 #일러스트 #파스텔",
         button:"Explore"
     },
@@ -305,39 +304,39 @@ export const designBannerItem = [
 ];
 export const designActivityItem = [
     {
-        href:"https://xururuca9797.github.io/mashup/",
+        href:"https://xururuca9797.github.io/mashup_site/",
         title: "Mashup Crew",
         titletext:": 매시업크루",
         src:"https://xururuca9797.github.io/mashup_site/images/project01_02.jpg",
         text:"#기획자 #총괄 #디자인 #스타일리스트 #코디 #그래픽 #보정 #총무 #사이트 #SNS",
         button:"Explore",
-        detailtext:"스트릿 스타일을 기반으로 다양한 분야에 사람들이 모여 하나의 새로운 작품을 완성하는 크루입니다.크루기획자로 활동하며, 시즌의 스토리와 기획, 촬영총괄, 스타일리스트, 그래픽 작업을 맡았습니다."
+        detailtext:"스트릿 스타일을 기반으로 다양한 분야에 사람들이 모여 하나의 새로운 작품을 완성하는 크루입니다.크루기획자로 활동하며, 시즌의 스토리와 기획, 촬영총괄, 스타일리스트, sns관리, 그래픽 작업을 맡았습니다."
     },
     {
-        href:"https://xururuca9797.github.io/mashup/",
+        href:"https://www.instagram.com/piecetogetherstation/",
         title: "Piecetogetherstation",
         titletext:": 종합기지",
         src:"https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/p960x960/97305588_245294266801432_4691837950781030400_o.jpg?_nc_cat=110&ccb=2&_nc_sid=2d5d41&_nc_ohc=c_Mg_UB5cSkAX_4R8h1&_nc_oc=AQkt88NfBmvUnVjMiuR6k7lDkbhyxkElyUYHqVCwbxfN3ONY4GSijxRYcbSECQ40vLY&_nc_ht=scontent-ssn1-1.xx&tp=6&oh=06562855ef813a3d990a2503ebe33689&oe=5FDEB871",
         text:"#기획자 #총괄 #디자인 #스타일리스트 #코디 #그래픽 #보정 #총무 #사이트 #SNS",
         button:"Explore",
-        detailtext:"종합기지(綜合基地)는 “조각들이 모여 하나의 기지를 이루다”라는 뜻으로, 악세사리 핸드메이드 브랜드.종합기지의 아이덴티티는  코발트 블루 색상의 우주공간 속 은빛가상의 공간을 만들어 기지요원들의 조각들이 모여서 종합기지라는 공간을 완성해 나가는  볼드하며 스트릿한 새로운 감성을 선보인다.대표로 활동하며, 촬영, SNS, WEB,디자인, 총무 등 전체적인 역할을 맡고있습니다."
+        detailtext:"종합기지(綜合基地)는 “조각들이 모여 하나의 기지를 이루다”라는 뜻으로, 악세사리 핸드메이드 브랜드.종합기지의 아이덴티티는  코발트 블루 색상의 우주공간 속 은빛가상의 공간을 만들어 기지요원들의 조각들이 모여서 종합기지라는 공간을 완성해 나가는  볼드하며 스트릿한 새로운 감성을 선보인다.대표로 활동하며, 제작, 그래픽, 촬영, SNS, WEB,디자인 등 전체적인 역할을 맡고있습니다."
     },
     {
-        href:"https://xururuca9797.github.io/mashup/",
-        title: "일러스트레이터",
+        href:"https://www.instagram.com/y.yrim_/",
+        title: "Illustrator",
         titletext:": 개인일러스트작업",
-        src:" http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        src:"https://usercontents-c.styleshare.io/images/41308135/640x-",
         text:"#일러스트",
         button:"Explore",
         detailtext:"無無無美: 無표정, 無속의 無의 美라는 주제로 일러스트 작업을 했습니다."
     },
     {
-        href:"https://xururuca9797.github.io/mashup/",
-        title: "개인SNS",
-        titletext:": 협찬",
+        href:"https://www.instagram.com/rain0_0sun/",
+        title: "Influencer",
+        titletext:": 개인 SNS협찬",
         src:"https://usercontents-c.styleshare.io/images/47610608/640x640",
         text:"#일러스트",
         button:"Explore",
-        detailtext:"저는 작년2019년 여름, LA에 여행을 가고 보는 시야가 커졌고, 자신의 대힌 자신감이 크게 늘었습니다.SNS의 영향력이 높아진 현재에 영향력을 줄 수 있는 사람이 되고싶었고,또 하나의 목표가 생겼습니다. 바로, 사람들에게 제품의 대한 정보를 주며,마케팅을 할 수 있도록 협찬을 받자! 라는 목표였습니다.2020년까지의 목표였지만, 2019년, 2개월만에 바로 목표를 달성하였답니다!"
+        detailtext:"저는 작년 2019년 여름, LA에 여행을 가게되면서 보는 시야가 커졌고, 자신의 대한 자신감이 크게 늘었습니다. SNS의 영향력이 높아진 현대에 영향력을 줄 수 있는 사람이 되고 싶었고, 또 하나의 목표가 생겼습니다. 바로, 사람들에게 제품에 대한 정보를 주고, 후기를 알려주면서 협찬을 받자!라는 목표였습니다. 2020년까지의 목표였지만, 2019년, 2개월 만에 바로 목표를 달성하였답니다! 그러면서 자연스럽게 자신에 대한 믿음과 자신감과 확신이 향상되었습니다.!"
     }
 ];
