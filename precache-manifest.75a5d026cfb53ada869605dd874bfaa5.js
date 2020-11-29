@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ea9d7c5035711d2ecaccb971bacd253",
+    "revision": "52c32591487741b2e72d65d60ce380fd",
     "url": "/yurim-world/index.html"
   },
   {
-    "revision": "0bf5e856b9b297c87efb",
+    "revision": "33f433ea2196533a8150",
     "url": "/yurim-world/static/css/main.41b4133e.chunk.css"
   },
   {
-    "revision": "53b936e8d6c9f1a9b62c",
-    "url": "/yurim-world/static/js/2.7eb5e2e1.chunk.js"
+    "revision": "ba14720f4fb0cfb4b21e",
+    "url": "/yurim-world/static/js/2.ec8f060f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/yurim-world/static/js/2.7eb5e2e1.chunk.js.LICENSE.txt"
+    "url": "/yurim-world/static/js/2.ec8f060f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bf5e856b9b297c87efb",
-    "url": "/yurim-world/static/js/main.365ecb16.chunk.js"
+    "revision": "33f433ea2196533a8150",
+    "url": "/yurim-world/static/js/main.099bbfe5.chunk.js"
   },
   {
     "revision": "62d2e64640519209342e",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2a25bf5ee8098dd49ba22b10a20be6a9",
     "url": "/yurim-world/static/media/aboutcontleft_profile.2a25bf5e.jpg"
-  },
-  {
-    "revision": "b2289376834d73f9c3713f97ec7ecab6",
-    "url": "/yurim-world/static/media/annemarie.b2289376.png"
   },
   {
     "revision": "402245ca81d808b2fcdd14111befa0bf",
