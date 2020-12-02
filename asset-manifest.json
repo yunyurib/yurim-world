@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yurim-world/static/css/main.41b4133e.chunk.css",
-    "main.js": "/yurim-world/static/js/main.5afb11a9.chunk.js",
-    "main.js.map": "/yurim-world/static/js/main.5afb11a9.chunk.js.map",
+    "main.js": "/yurim-world/static/js/main.561537d8.chunk.js",
+    "main.js.map": "/yurim-world/static/js/main.561537d8.chunk.js.map",
     "runtime-main.js": "/yurim-world/static/js/runtime-main.17e24ea2.js",
     "runtime-main.js.map": "/yurim-world/static/js/runtime-main.17e24ea2.js.map",
     "static/js/2.804ef9de.chunk.js": "/yurim-world/static/js/2.804ef9de.chunk.js",
     "static/js/2.804ef9de.chunk.js.map": "/yurim-world/static/js/2.804ef9de.chunk.js.map",
     "index.html": "/yurim-world/index.html",
-    "precache-manifest.382f9ad2ec84afe6f12325ab7cd101ba.js": "/yurim-world/precache-manifest.382f9ad2ec84afe6f12325ab7cd101ba.js",
+    "precache-manifest.21aa7834c5217cc0808883f1b9be493d.js": "/yurim-world/precache-manifest.21aa7834c5217cc0808883f1b9be493d.js",
     "service-worker.js": "/yurim-world/service-worker.js",
     "static/css/main.41b4133e.chunk.css.map": "/yurim-world/static/css/main.41b4133e.chunk.css.map",
     "static/js/2.804ef9de.chunk.js.LICENSE.txt": "/yurim-world/static/js/2.804ef9de.chunk.js.LICENSE.txt",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.17e24ea2.js",
     "static/js/2.804ef9de.chunk.js",
     "static/css/main.41b4133e.chunk.css",
-    "static/js/main.5afb11a9.chunk.js"
+    "static/js/main.561537d8.chunk.js"
   ]
 }
