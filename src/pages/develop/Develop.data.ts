@@ -6,8 +6,10 @@ import Benjerry from "../../assets/image/benjerry.png";
 import Bomapp from "../../assets/image/Bomapp.png";
 import Mashup from "../../assets/image/mashup.png";
 import Miero from "../../assets/image/miero.png";
+import Eggslut from "../../assets/image/Eggslut.png"
 import Piecetogetherstation from "../../assets/image/piecetogetherstation.png";
 import Yangyangsolbeach from "../../assets/image/yangyangsolbeach.png";
+import Nav from "../../assets/image/cssnav.png";
 
 //Work
 export const DevelopWorkData = [
@@ -52,6 +54,13 @@ export const DevelopWebData = [
   //   hashtags:"#그누보드 #페럴렉스 #제이쿼리",
   //   project:"기존의 공식사이트는 모든 아티스트를 한번에 소개하여, 아티스트의 대한 설명이 부족하고, 개인적으로 앤마리라는 가수를 좋아하여 만들게되었습니다."
   // },
+  {
+    title: "eggslut",
+    href:"https://xururuca9797.github.io/eggslut/",
+    src: Eggslut,
+    hashtags:"#웹표준 #웹접근성 #HTML, CSS #JQ ",
+    project:"웹표준과 웹접근성을 지키며, 크로스브라우징과 반응형이 가능한 사이트입니다."
+  },
   {
     title: "ellesse",
     href:"http://yurimxu.dothome.co.kr/web/renewal/ellesse/",
@@ -126,27 +135,27 @@ export const DevelopWebData = [
 // Animation
 export const DevelopAnimationData = [
     {
-      title: "WVproject",
-      href:"http://www.wvproject.co.kr/",
-      src: "http://www.chopiee.com/shopimages/chopiee/0010050001682.jpg?1605840924",
-      text:"사이트설명글입니다리"
+      title: "CSS full Navigation Menu",
+      href:"https://codepen.io/xururuca/pen/VwKYOeP",
+      src: Nav,
+      text:"CodePen Home CSS full Navigation Menu"
     },
     {
-      title: "Chopiee",
-      href:"http://www.chopiee.com/",
-      src:"http://www.chopiee.com/shopimages/chopiee/0020020003112.jpg?1605085245",
-      text:"사이트설명글입니다리"
+      title: "Individual Navigation",
+      href:"https://codepen.io/xururuca/pen/BaLyeNr",
+      src:Nav,
+      text:"CSS Individual Navigation Menu"
     },
     {
       title: "Jemut",
-      href:"http://www.jemutshop.com/",
-      src:"http://www.fairplay142.com/shopimages/efairplay/0170030012782.jpg?1569313967",
-      text:"사이트설명글입니다리"
+      href:"https://codepen.io/xururuca/pen/PoGwady",
+      src:Nav,
+      text:"Tree nav (Tree형 네비게이션)"
     },
     {
-      title: "Fairplay",
-      href:"http://www.fairplay142.com",
-      src:"http://www.fairplay142.com/shopimages/efairplay/0170010174512.jpg?1603886633",
-      text:"사이트설명글입니다리"
+      title: "Jemut",
+      href:"https://codepen.io/xururuca/pen/PoGwady",
+      src:Nav,
+      text:"Tree nav (Tree형 네비게이션)"
     }
   ];

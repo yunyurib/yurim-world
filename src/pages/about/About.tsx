@@ -83,10 +83,10 @@ export function About() {
               Where i live
               <span>Gongneung-ro, Nowon-gu, Seoul</span>
             </p>
-            <p>
+            {/* <p>
               Give me a call
               <span> T. +82 (0)10 5452 9497</span>
-            </p>
+            </p> */}
             <p>
               Or, why don’t you email me?
               <br />
