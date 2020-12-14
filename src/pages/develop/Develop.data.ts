@@ -44,22 +44,15 @@ export const DevelopWebData = [
     title: "Yurim-World",
     href:"https://xururuca9797.github.io/yurim-world/",
     src: Yurimworld,
-    hashtags:"#React #Route #StyledComponent #Typescript #Javascript",
+    hashtags:"#React #Route #StyledComponent #Javascript",
     project:"현재 사이트입니다. 리액트로 제작하였습니다. 혼자 공부하기에 많은 시행착오가 있었지만, 헤맨 만큼 구현을 할 수 있게 되었습니다."
   },
-  // {
-  //   title: "Anne-Marie",
-  //   href:"http://yurimxu.dothome.co.kr/web/renewal/Anne-Marie/",
-  //   src: Annemarie,
-  //   hashtags:"#그누보드 #페럴렉스 #제이쿼리",
-  //   project:"기존의 공식사이트는 모든 아티스트를 한번에 소개하여, 아티스트의 대한 설명이 부족하고, 개인적으로 앤마리라는 가수를 좋아하여 만들게되었습니다."
-  // },
   {
     title: "eggslut",
     href:"https://xururuca9797.github.io/eggslut/",
     src: Eggslut,
-    hashtags:"#웹표준 #웹접근성 #HTML, CSS #JQ ",
-    project:"웹표준과 웹접근성을 지키며, 크로스브라우징과 반응형이 가능한 사이트입니다."
+    hashtags:"#반응형 #웹접근성 #HTML, CSS #JQ ",
+    project:"웹접근성을 지키며, 크로스브라우징과 반응형이 가능한 사이트입니다."
   },
   {
     title: "ellesse",
