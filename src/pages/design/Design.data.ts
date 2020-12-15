@@ -1,11 +1,43 @@
 import cpbanner from "../../assets/image/cpbanner21.jpg";
+import Yangyangsolbeach from "../../assets/image/yangyangsolbeach.png";
+import Ellesse from "../../assets/image/ellesse.png";
+import Benjerry from "../../assets/image/benjerry.png";
+import korail from "../../assets/image/korail.jpg";
 export const designWabData = [
     // 웹디자인
     {
-        href:"https://store.musinsa.com/app/product/detail/990945/0",
+        href:"http://yurimxu.dothome.co.kr/web/ui_designguide/solbeach_designguide.pdf",
+        title: "양양 쏠비치",
+        src:Yangyangsolbeach,
+        text:"#디자인가이드 #pdf",
+        button:"Explore"
+    },
+    {
+        href:"http://yurimxu.dothome.co.kr/web/ui_designguide/korail_design.pdf",
         title: "코레일",
-        src:"http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
-        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        src:korail,
+        text:"#웹디자인 #pdf",
+        button:"Explore"
+    },
+    {
+        href:"http://yurimxu.dothome.co.kr/web/ui_designguide/ellesse_wirefram.pdf",
+        title: "엘리쎄",
+        src:Ellesse,
+        text:"#와이어프레임 #스토리보드 #pdf",
+        button:"Explore"
+    },
+    {
+        href:"http://yurimxu.dothome.co.kr/web/ui_designguide/benjerry_wirefram.pdf",
+        title: "벤앤제리스",
+        src:Benjerry,
+        text:"#와이어프레임 #스토리보드 #pdf",
+        button:"Explore"
+    },
+    {
+        href:"http://yurimxu.dothome.co.kr/web/ui_designguide/benjerry_designguide.pdf",
+        title: "벤앤제리스",
+        src:Benjerry,
+        text:"#디자인가이드 #pdf",
         button:"Explore"
     },
 ];
