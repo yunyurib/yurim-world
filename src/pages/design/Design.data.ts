@@ -1,4 +1,14 @@
 import cpbanner from "../../assets/image/cpbanner21.jpg";
+export const designWabData = [
+    // 웹디자인
+    {
+        href:"https://store.musinsa.com/app/product/detail/990945/0",
+        title: "코레일",
+        src:"http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507",
+        text:"#의류디자인 #상세페이지 #썸네일 #그래픽 #보정",
+        button:"Explore"
+    },
+];
 export const designDetailData = [
     // wv
     {

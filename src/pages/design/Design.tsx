@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import {
+  designWabData,
   designDetailData,
   designEventItem,
   designBannerItem,
@@ -10,6 +11,11 @@ import {
 import { Morebutton } from "../../components/morebutton/Morebutton";
 
 export function Design() {
+  const [designWabLine, setDesignWabLine] = useState<number>(1);
+  const designWabItemLineCountEvent = () => {
+    const count = designWabLine + 1;
+    setDesignWabLine(count);
+  };
   const [designDetailLine, setDesignDetailLine] = useState<number>(1);
   const designDetailItemLineCountEvent = () => {
     const count = designDetailLine + 1;
@@ -28,7 +34,25 @@ export function Design() {
       top: 0,
     });
   };
-
+  const createDesignWabItem = designWabData
+    .filter((data, index) => index <= designWabLine * 4 - 1)
+    .map((data, index) => {
+      return (
+        <li className="liSmall" key={index}>
+          <a href={data.href} target="blank" className="liLink">
+            <div className="liImg">
+              <img src={data.src} alt={data.title} />
+            </div>
+            <span>{data.title}</span>
+            <p>{data.text}</p>
+            <div className="liButton">
+              {data.button}
+              <span>&rarr;</span>
+            </div>
+          </a>
+        </li>
+      );
+    });
   const createDesignDetailItem = designDetailData
     .filter((data, index) => index <= designDetailLine * 4 - 1)
     .map((data, index) => {
@@ -107,6 +131,12 @@ export function Design() {
       <DesignGrid />
       <DesignCont>
         <h2>DESIGN</h2>
+        <DesignContClone>
+          <h3>Wab page</h3>
+          <p>웹페이지 디자인</p>
+          <DesignContList>{createDesignWabItem}</DesignContList>
+          <Morebutton btnEvent={designWabItemLineCountEvent} />
+        </DesignContClone>
         <DesignContClone>
           <h3>Detail page</h3>
           <p>의류,러쉬,악세사리 상세 페이지</p>
