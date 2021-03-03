@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import {
-  DevelopWorkData,
-  DevelopWebData,
-  DevelopAnimationData,
-} from "./Develop.data";
+import { DevelopWorkData, DevelopWebData } from "./Develop.data";
 import { Morebutton } from "../../components/morebutton/Morebutton";
 
 export function Develop() {
@@ -12,14 +8,6 @@ export function Develop() {
   const developWebItemLineCountEvent = () => {
     const count = developWebItemlLine + 1;
     setdevelopWebItemlLine(count);
-  };
-
-  const [developAnimationItemlLine, setdevelopAnimationItemlLine] = useState<
-    number
-  >(1);
-  const developAnimationItemLineCountEvent = () => {
-    const count = developAnimationItemlLine + 1;
-    setdevelopAnimationItemlLine(count);
   };
 
   const scrollTop = () => {
@@ -69,24 +57,6 @@ export function Develop() {
     );
   });
 
-  const createDevelopAnimationItem = DevelopAnimationData.filter(
-    (data, index) => index <= developAnimationItemlLine * 4 - 1
-  ).map((data, index) => {
-    return (
-      <li className="liSmall">
-        <a href={data.href} target="blank">
-          <div className="liImg">
-            <img src={data.src} alt={data.title}></img>
-          </div>
-          <p className="title">{data.title}</p>
-          <p>{data.text}</p>
-          <div className="liButton">
-            Explore<span>&rarr;</span>
-          </div>
-        </a>
-      </li>
-    );
-  });
   return (
     <DevelopWrapper>
       <DevelopGrid />
@@ -108,14 +78,6 @@ export function Develop() {
         <DevelopWorkLisr>
           {createDevelopWebItem}
           <Morebutton btnEvent={developWebItemLineCountEvent} />
-        </DevelopWorkLisr>
-      </DevelopBox>
-      <DevelopBox>
-        <h3>Individual activity</h3>
-        <p>CSS 애니메이션</p>
-        <DevelopWorkLisr className="DevelopAnimationLisr">
-          {createDevelopAnimationItem}
-          <Morebutton btnEvent={developAnimationItemLineCountEvent} />
         </DevelopWorkLisr>
       </DevelopBox>
       <ScrollTopButton type="button" onClick={scrollTop}>

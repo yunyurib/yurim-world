@@ -166,38 +166,6 @@ export function About() {
                 </div>
               </li>
               <li>
-                <span className="HistoryDate">2019.10~2019.11</span>
-                <p className="HistoryTitle">LF몰 닥스키즈 사무, 디자인 보조</p>
-                <div>
-                  <p>
-                    - 조직 내부와 외부에서 요청하거나 필요한 업무를 지원하고
-                    관리하는 일 등 수행, 효율적인 관리를 위한 서류 지원‧보조
-                  </p>
-                  <p>
-                    - 구성원들의 업무 능률 향상을 위하여 사무기기 운용, 소모품,
-                    비품관리, 사무환경 유지 등의 업무를 실행하였습니다.
-                  </p>
-                  <p>
-                    - 주의깊은 관찰, 문제해결 의지, 꼼꼼한 관리태도, 비품․
-                    소모품 파악의 집중력이 향상되는데에 도움이 되었습니다.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span className="HistoryDate">2019.12~2019.12</span>
-                <p className="HistoryTitle">
-                  작당모의 업무보조<span>잼페이스 어플리케이션 엄무보조</span>
-                </p>
-                <div>
-                  <p>- 서비스의 데이터 수</p>
-                  <p>- 영상서비스 정보 입력</p>
-                </div>
-              </li>
-            </ul>
-          </AboutContLeftSkillTitle>
-          <AboutContLeftSkillText>
-            <ul className="HistoryBox skillBox6">
-              <li>
                 <span className="HistoryDate">2019.09~2019.10</span>
                 <p className="HistoryTitle">
                   러쉬 코리아 웹디자인<span>UI/UX팀</span>
@@ -217,6 +185,10 @@ export function About() {
                   <p>- 성분 서치 후 제품의 성분 표시</p>
                 </div>
               </li>
+            </ul>
+          </AboutContLeftSkillTitle>
+          <AboutContLeftSkillText>
+            <ul className="HistoryBox skillBox6">
               <li>
                 <span className="HistoryDate">2020.04~2020.11</span>
                 <p className="HistoryTitle">

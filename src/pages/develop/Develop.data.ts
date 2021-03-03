@@ -1,15 +1,14 @@
 //Web Image
 import Yurimworld from "../../assets/image/yurimworld.png";
-// import Annemarie from "../../assets/image/annemarie.png";
 import Ellesse from "../../assets/image/ellesse.png";
 import Benjerry from "../../assets/image/benjerry.png";
+import Musinsa from "../../assets/image/musinsa.png";
+import LoginApi from "../../assets/image/LoginApi.png";
 import Bomapp from "../../assets/image/Bomapp.png";
 import Mashup from "../../assets/image/mashup.png";
 import Miero from "../../assets/image/miero.png";
-import Eggslut from "../../assets/image/Eggslut.png"
-import Piecetogetherstation from "../../assets/image/piecetogetherstation.png";
+import Eggslut from "../../assets/image/Eggslut.png";
 import Yangyangsolbeach from "../../assets/image/yangyangsolbeach.png";
-import Nav from "../../assets/image/cssnav.png";
 
 //Work
 export const DevelopWorkData = [
@@ -46,6 +45,27 @@ export const DevelopWebData = [
     src: Yurimworld,
     hashtags:"#React #Route #StyledComponent #Javascript",
     project:"현재 사이트입니다. 리액트로 제작하였습니다. 혼자 공부하기에 많은 시행착오가 있었지만, 헤맨 만큼 구현을 할 수 있게 되었습니다."
+  },
+  {
+    title: "Musinsa_UI",
+    href:"https://github.com/xururuca9797/musinsa_ui",
+    src: Musinsa,
+    hashtags:"#HTML5 #CSS3-SCSS #Javascript #jQuery",
+    project:"무신사의 쇼케이스, 상품목록 UI를 마크업으로 구현하였습니다."
+  },
+  {
+    title: "Login_api",
+    href:"https://github.com/xururuca9797/login_api",
+    src: LoginApi,
+    hashtags:"#HTML5 #CSS3 #Javascript #API",
+    project:"수파자 사이트의 마크업, 로그인 API를 사용한 로그인을 구축하였습니다."
+  },
+  {
+    title: "NAVER.M",
+    href:"https://github.com/xururuca9797/naver.m",
+    src: "https://platum.kr/wp-content/uploads/2015/05/unnamed-111.jpg",
+    hashtags:"#마크업 #웹표준 #모바일 #반응형",
+    project:"네이버 모바일. 기존의 네이버 모바일 페이지 반응형 마크업 페이지.웹표준과 웹접근성, 크로스브라우징, 반응형이 가능한 사이트입니다. 상단 메뉴, 실시간 급상승 부분은 JavaScript를 활용하여 효과를 넣었습니다."
   },
   {
     title: "eggslut",
@@ -91,17 +111,10 @@ export const DevelopWebData = [
   },
   {
     title: "mashup",
-    href:"https://xururuca9797.github.io/mashup_site/",
+    href:"https://github.com/xururuca9797/mashup.club",
     src: Mashup,
     hashtags:"#라이브러리 #마우스무브 #자바스크립트",
     project:"저희 매시업클럽은 스트릿 스타일을 기반으로 다양한 분야에 사람들이 모여 하나의 새로운 작품을 완성하는 클럽(크루)입니다. 현재 구현중입니다."
-  },
-  {
-    title: "piecetogethersta...",
-    href:"http://skin-mobile5.xururuca97.cafe24.com/",
-    src: Piecetogetherstation,
-    hashtags:"#모바일 #카페24",
-    project:"종합기지(綜合基地)는 “조각들이 모여 하나의 기지를 이루다”라는 뜻으로, 실버 악세사리(주로 목걸이)를 파는 핸드메이드 브랜드. 종합기지의 아이덴티티는  코발트 블루 색상의 우주공간 속 은빛가상의 공간을 만들어 기지요원들의 조각들이 모여 종합기지라는 공간을 완성해 나가는 볼드하며 스트릿한 새로운 감성을 선보인다."
   },
   {
     title: "kokoa clone",
@@ -109,46 +122,5 @@ export const DevelopWebData = [
     src: "data:image/png;base64,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",
     hashtags:"#채팅 #EMD",
     project:"코코아톡 클론 카카오톡을 모티브로 한 마크업 페이지입니다."
-  },
-  {
-    title: "NAVER.M",
-    href:"http://yurimxu.dothome.co.kr/web/m.naver.com/",
-    src: "https://platum.kr/wp-content/uploads/2015/05/unnamed-111.jpg",
-    hashtags:"#마크업 #웹표준 #모바일 #반응형",
-    project:"네이버 모바일 마크업 페이지입니다."
-  },
-  {
-    title: "NAVER.M",
-    href:"http://yurimxu.dothome.co.kr/web/m.naver.com/",
-    src: "https://platum.kr/wp-content/uploads/2015/05/unnamed-111.jpg",
-    hashtags:"#마크업 #웹표준 #모바일 #반응형",
-    project:"네이버 모바일 마크업 페이지입니다."
   }
   ];  
-// Animation
-export const DevelopAnimationData = [
-    {
-      title: "CSS full Navigation Menu",
-      href:"https://codepen.io/xururuca/pen/VwKYOeP",
-      src: Nav,
-      text:"CodePen Home CSS full Navigation Menu"
-    },
-    {
-      title: "Individual Navigation",
-      href:"https://codepen.io/xururuca/pen/BaLyeNr",
-      src:Nav,
-      text:"CSS Individual Navigation Menu"
-    },
-    {
-      title: "Jemut",
-      href:"https://codepen.io/xururuca/pen/PoGwady",
-      src:Nav,
-      text:"Tree nav (Tree형 네비게이션)"
-    },
-    {
-      title: "Jemut",
-      href:"https://codepen.io/xururuca/pen/PoGwady",
-      src:Nav,
-      text:"Tree nav (Tree형 네비게이션)"
-    }
-  ];

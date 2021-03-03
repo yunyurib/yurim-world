@@ -6,7 +6,6 @@ import {
   designDetailData,
   designEventItem,
   designBannerItem,
-  designActivityItem,
 } from "./Design.data";
 import { Morebutton } from "../../components/morebutton/Morebutton";
 
@@ -108,24 +107,6 @@ export function Design() {
       </li>
     );
   });
-  const createDesignActivityItem = designActivityItem.map((data, index) => {
-    return (
-      <li className="liSmall liActivity">
-        <a href={data.href} target="blank" className="liLink">
-          <p className="liDetailText">{data.detailtext}</p>
-          <div className="liActivityliImg">
-            <img src={data.src} alt={data.title}></img>
-          </div>
-          <span>{data.title}</span>
-          <p>{data.titletext}</p>
-          <div className="liButton">
-            {data.button}
-            <span>&rarr;</span>
-          </div>
-        </a>
-      </li>
-    );
-  });
   return (
     <DesignWrapper>
       <DesignGrid />
@@ -153,12 +134,6 @@ export function Design() {
           <h3>Banner</h3>
           <p>브랜드별 배너, SNS, 네이버광고</p>
           <DesignContList>{createDesignBannerItem}</DesignContList>
-        </DesignContClone>
-        <DesignContClone>
-          <h3>Individual activity</h3>
-          <p>저는 이런 개인 활동을 하고 있습니다.</p>
-          <DesignContList>{createDesignActivityItem}</DesignContList>
-          {/* more */}
         </DesignContClone>
       </DesignCont>
       <ScrollTopButton type="button" onClick={scrollTop}>
