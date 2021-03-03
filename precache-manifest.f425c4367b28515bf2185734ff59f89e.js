@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5770baa98cdd3dbf5d50d737c92bca45",
+    "revision": "96cedf4ae585ca7f7332005f59959dcc",
     "url": "/yurim-world/index.html"
   },
   {
-    "revision": "9f010933c55cdf70207c",
-    "url": "/yurim-world/static/css/main.41b4133e.chunk.css"
+    "revision": "4e17c572b65bd36de8e9",
+    "url": "/yurim-world/static/css/main.e294290a.chunk.css"
   },
   {
-    "revision": "efeb905cc791503a16b4",
-    "url": "/yurim-world/static/js/2.26b044fd.chunk.js"
+    "revision": "03a00879e3a44ae04114",
+    "url": "/yurim-world/static/js/2.1c505e98.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/yurim-world/static/js/2.26b044fd.chunk.js.LICENSE.txt"
+    "url": "/yurim-world/static/js/2.1c505e98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f010933c55cdf70207c",
-    "url": "/yurim-world/static/js/main.8f2ff556.chunk.js"
+    "revision": "4e17c572b65bd36de8e9",
+    "url": "/yurim-world/static/js/main.4305fbb2.chunk.js"
   },
   {
     "revision": "62d2e64640519209342e",
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yurim-world/static/media/Eggslut.81ca61f6.png"
   },
   {
-    "revision": "c77aa973d7a7d627e3150a6069b098df",
-    "url": "/yurim-world/static/media/about-skill-logos.c77aa973.png"
+    "revision": "84f9716bded90a14e556a7da44992b3b",
+    "url": "/yurim-world/static/media/LoginApi.84f9716b.png"
   },
   {
-    "revision": "2a25bf5ee8098dd49ba22b10a20be6a9",
-    "url": "/yurim-world/static/media/aboutcontleft_profile.2a25bf5e.jpg"
+    "revision": "a2e7039804f250c9f2d015e6f7dbc559",
+    "url": "/yurim-world/static/media/aboutcontleft_profile.a2e70398.jpg"
   },
   {
     "revision": "402245ca81d808b2fcdd14111befa0bf",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yurim-world/static/media/ellesse.e44a07fd.png"
   },
   {
+    "revision": "6de2c31c5e2d402f588ae2090fe64b0e",
+    "url": "/yurim-world/static/media/korail.6de2c31c.jpg"
+  },
+  {
     "revision": "ac6c6727aed9e59f2601795212f7b55f",
     "url": "/yurim-world/static/media/mashup.ac6c6727.png"
   },
@@ -60,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yurim-world/static/media/miero.b93ac72d.png"
   },
   {
-    "revision": "debb78e5b673e96d2a4eb17f65d537a8",
-    "url": "/yurim-world/static/media/piecetogetherstation.debb78e5.png"
+    "revision": "37bf33cc787ed01134617416ca1cc041",
+    "url": "/yurim-world/static/media/musinsa.37bf33cc.png"
   },
   {
     "revision": "61c3df85b58f876f0e2deeb46c307454",
